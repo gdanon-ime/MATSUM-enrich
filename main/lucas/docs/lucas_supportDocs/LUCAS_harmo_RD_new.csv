@@ -1,0 +1,291 @@
+,variable,type,NR,values,documentation,Description,Comments,collection year
+1,id,NA,NA,NA,NA,NA,NA,NA
+2,point_id,INTEGER,-,-,"C1(Instructions), p.141, sec.9.1.1",Unique point identifier,,all
+3,year,INTEGER,,-,,Which year the point was surveyed,,all
+4,nuts0,VARCHAR(2),-,-,-,NUTS 2016 Level 0,,all
+5,nuts1,VARCHAR(3),-,-,-,NUTS 2016 Level 1,,all
+6,nuts2,VARCHAR(4),-,-,-,NUTS 2016 Level 2,,all
+7,nuts3,VARCHAR(5),-,-,-,NUTS 2016 Level 3,,2018
+8,th_lat,DECIMAL,88.888888,-,-,Theoretical latitude (WGS84) of the LUCAS point according to the LUCAS grid,,all
+9,th_long,DECIMAL,88.888888,-,-,Theoretical longitude (WGS84) of the LUCAS point according to the LUCAS grid,,all
+10,office_pi,INTEGER,-,"0 - No; 
+1 - Yes;","C1(Instructions), p.141, sec.9.1.1",Indication of whether photo-interpretation has happened in the office for this LUCAS point,,2015 2018
+11,ex_ante,INTEGER,-,"0 - No; 
+1 - Yes;","C1(Instructions), p.141, sec.9.1.1",,,2018
+12,survey_date,DATE,-,-,,Date on which the survey was carried out,,all
+13,car_latitude,DECIMAL,,-,"C1(Instructions), p.141, sec.9.1.2",Latitude (WGS84) on which the car was parked,,2018
+14,car_ew,INTEGER,,"1 - East; 
+2 - West; 
+8 - Not relevant;",,GPS Car parking East/West,,2018
+15,car_longitude,DECIMAL,,-,"C1(Instructions), p.142, sec.9.1.2",Longitude (WGS84) on which the car was parked,,2018
+16,gps_proj,INTEGER,,"1 - WGS84; 
+2 - No GPS signal; 
+8 - Not relevant;","C1(Instructions), p.142, sec.9.1.2",Normal functioning of GPS using “WGS 84” as coordinate system.,,all
+17,gps_prec,INTEGER,,-,"C1(Instructions), p.142, sec.9.1.2",Indication of average location error as given by GPS receiver (in meters),,all
+18,gps_altitude,INTEGER,,-,"C1(Instructions), p.141, sec.9.1.1",Elevation in m above sea level,,2009 2012 2015 2018
+19,gps_lat,DECIMAL,,-,"C1(Instructions), p.142, sec.9.1.2",GPS latitude of the location from which observation is actually done (WGS84),,all
+20,gps_ew,INTEGER,,"1 - East; 
+2 – West;
+8 – Not relevant;",,East-west encoding setting for GPS.,,all
+21,gps_long,DECIMAL,,-,"C1(Instructions), p.142, sec.9.1.2",GPS longitude of the location from which observation is actually done (WGS84),,all
+22,obs_dist,DECIMAL,-1,-,,Indication of the distance between observation location and the LUCAS point as provided by the GPS receiver (in meters).,,all
+23,obs_direct,INTEGER,8,"1 - On the point; 
+2 - Look to the North; 
+3 - Look to the East; 
+8 - Not relevant;","C1(Instructions), p.144, sec.9.1.4","1 - On the point Point regularly observed.
+2 – To North “Look to the North” rule is applied if the point is located on a boundary/ edge or a small linear feature (<3 m wide).
+3 – To East ""Look to the East"" rule is applied if the point is located on a boundary/edge or a small linear feature (<3 m wide) directed.
+8 – Not relevant",,all
+24,obs_type,INTEGER,,"1 - In situ < 100 m; 
+2 - In situ > 100 m; 
+3 - In situ PI; 
+4 - In situ PI not possible; 
+5 - Out of national territory; 
+7 - In office PI;
+8 – Marine Sea; (only 2015)","C1(Instructions), p.142-144, sec.9.1.4",The method of observation for the relevant point. ,Find more details check the documentation link.,all
+25,obs_radius,INTEGER,,"1 – 1.5;
+2 - 20; 
+8 - Not relevant;",C1(Instructions),The radius of observation – whether the near or the extended window of observation is applied.,,2006 2009 2012 2015
+26,letter_group,VARCHAR(1),,-,,Which letter group (top tier classification) from the C3 document is the point assigned to,,all
+27,lc1,VARCHAR (3),,-,Harmonized C3 document,Coding of land cover according to harmonized C3 classification.,,all
+28,lc1_label,VARCHAR,-,-,Harmonized C3 document,Label of land cover according to harmonized C3 document,NA,NA
+29,lc1_spec,VARCHAR(4),,-,Harmonized C3 document,Coding of land cover species according to harmonized C3 classification.,,2009 2012 2015 2018
+30,lc1_spec_label,VARCHAR,NA,NA,Harmonized C3 document,Label of land cover species according to harmonized C3 document,NA,NA
+31,lc1_perc,VARCHAR,,"1 - < 10; 
+2 - 10 - 25; 
+3 - 25 - 50; 
+4 - 50 - 75; 
+5 - > 75;
+8 – Not relevant;",,The percentage that the assigned land cover type (lc1) occupies on the ground. ,NB! - This coding applies only for the years 2009 – 2015. For 2018 the number represents the percentage of land-cover (0-100). The variable does not exist for 2006,2009 2012 2015 2018
+32,lc2,VARCHAR (3),,-,Harmonized C3 document,Coding of land cover according to harmonized C3 classification.,,all
+33,lc2_label,NA,NA,NA,Harmonized C3 document,Label of land cover according to harmonized C3 document,NA,NA
+34,lc2_spec,VARCHAR (4),,-,Harmonized C3 document,Coding of land cover species according to harmonized C3 classification.,,2009 2012 2015 2018
+35,lc2_spec_label,NA,NA,NA,Harmonized C3 document,Label of land cover species according to harmonized C3 document,NA,NA
+36,lc2_perc,VARCHAR,,"1 - < 10; 
+2 - 10 - 25; 
+3 - 25 - 50; 
+4 - 50 - 75; 
+5 - > 75;
+8 – Not relevant;",,The percentage that the assigned land cover type (lc2) occupies on the ground. ,NB! - This coding applies only for the years 2009 – 2015. For 2018 the number represents the percentage of land-cover (0-100). The variable does not exist for 2006,2009 2012 2015 2018
+37,lu1,VARCHAR (4),,-,Harmonized C3 document,Coding of the land use according to Harmonized C3 document classification,,all
+38,lu1_label,NA,NA,NA,Harmonized C3 document,Label of the land use according to Harmonized C3 document classification,NA,NA
+39,lu1_type,VARCHAR (5),,-,Harmonized C3 document,Coding of the land use types according to Harmonized C3 document classification,,2015 2018
+40,lu1_type_label,NA,NA,NA,Harmonized C3 document,Label of the land use types according to Harmonized C3 document classification,NA,NA
+41,lu1_perc,VARCHAR,,"1 -  < 5;
+2 - 5 – 10;
+3 - 10 – 25;
+4 - 25 – 50;
+5 - 50 – 75;
+6 - 75 – 90;
+7 -  ≥ 90;
+8 – Not Relevant;",,The percentage that the assigned land use type (lu1) occupies on the ground. ,"NB! - This coding applies only for the year 2015. For 2018 the number represents the percentage of land-cover (0-100). The variable does not exist for 2006, 2009 and 2012;",2015 2018
+42,lu2,VARCHAR (4),,-,Harmonized C3 document,Coding of the land use according to Harmonized C3 document classification,,all
+43,lu2_label,NA,NA,NA,Harmonized C3 document,Label of the land use according to Harmonized C3 document classification,NA,NA
+44,lu2_type,VARCHAR (5),,-,Harmonized C3 document,Coding of the land use types according to Harmonized C3 document classification,,2015 2018
+45,lu2_type_label,NA,NA,NA,Harmonized C3 document,Label of the land use types according to Harmonized C3 document classification,NA,NA
+46,lu2_perc,VARCHAR,,"1 -  < 5;
+2 - 5 – 10;
+3 - 10 – 25;
+4 - 25 – 50;
+5 - 50 – 75;
+6 - 75 – 90;
+7 -  ≥ 90;
+8 - Not Relevant;",,The percentage that the assigned land use type (lu2) occupies on the ground. ,"NB! - This coding applies only for the year 2015. For 2018 the number represents the percentage of land-cover (0-100). The variable does not exist for 2006, 2009 and 2012;",2015 2018
+47,parcel_area_ha,INTEGER,,"1 - < 0.5;
+2 - 0.5 – 1;
+3 - 1 – 10;
+4 - > 10;
+8 – Not Relevant;",,Size of the surveyed parcel in hectares.,,2009 2012 2015 2018
+48,tree_height_maturity,INTEGER,,"1 - < 5 m ; 
+2 - > 5 m; 
+8 - Not relevant; 
+255 – Not identifiable;","C1(Instructions), p.147, sec.9.1.6",Height of trees at maturity,,2012 2015 2018
+49,tree_height_survey,INTEGER,,"1 - < 5 m ; 
+2 - > 5 m; 
+8 - Not relevant; 
+255 – Not identifiable;","C1(Instructions), p.147, sec.9.1.6",Height of trees at the moment of survey,,2009 2012 2015 2018
+50,feature_width,INTEGER,,"1 - < 20 m; 
+2 - > 20 m; 
+8 - Not relevant;
+255 – Not identifiable;","C1(Instructions), p.147, sec.9.1.6",Width of the feature,,2009 2012 2015 2018
+51,lm_stone_walls,INTEGER,,"1 - No; 
+2 - Stone wall not maintained; 
+3 - Stone wall well maintained; 
+8 - Not relevant;","C1(Instructions), p.148, sec.9.1.7",Presence of stone walls on the plot. ,NB! - only for 2018,2018
+52,crop_residues,INTEGER,,"1 - Yes; 
+2 - No;
+8 - Not relevant;",,Presence of crop residues on the plot,,2018
+53,lm_grass_margins,INTEGER,,"1 - No; 
+2 - < 1 m width; 
+3 - > 1 m width; 
+8 - Not relevant;","C1(Instructions), p.148, sec.9.1.7",Presence of grass margins on the plot. ,NB! - only for 2018,2018
+54,grazing,INTEGER,,"1 - Signs of grazing; 
+2 - No signs of grazing; 
+8 - Not relevant; ","C1(Instructions), p.148, sec.9.1.8",Signs of grazing on the plot.,,2009 2012 2015 2018
+55,special_status,INTEGER,,"1 - Protected; 
+2 - Hunting; 
+3 - Protected and hunting; 
+4 - No special status; 
+8 - Not relevant;","C1(Instructions), p.149, sec.9.1.8",Whether the plot is part of any specially regulated area. ,,2012 2015 2018
+56,lc_lu_special_remark,INTEGER,,"1 - Harvested field; 
+2 - Tilled/sowed; 
+3 - Clear cut; 
+4 - Burnt area; 
+5 - Fire break; 
+6 - Nursery; 
+7 - Dump site; 
+8 - Temporary dry; 
+9 - Temporary flooded; 
+10 - No remark; 
+88 - Not Relevant;","C1(Instructions), p.149-150, sec.9.1.8",Any special remarks on the land cover / land use.,Find more details check the documentation link.,2012 2015 2018
+57,cprn_cando,INTEGER,,"1 - Yes; 
+2 - No; 
+8 - Not relevant;","C1(Instructions), p.150, sec.9.1.9",Can you do a Copernicus survey on this point?,NB! - only for 2018,2018
+58,cprn_lc,TEXT,,-,Harmonized C3 document,The land cover on the Copernicus points according to the classification scheme at level2,NB! - only for 2018,2018
+59,cprn_lc_label,NA,NA,NA,NA,NA,NA,NA
+60,cprn_lc1n,INTEGER,,-,"C1(Instructions), p.150, sec.9.1.9",The extent (in meters) to which the land cover of the Copernicus point stays the same in direction North,NB! - only for 2018,2018
+61,cprnc_lc1e,INTEGER,,-,"C1(Instructions), p.150, sec.9.1.9",The extent (in meters) to which the land cover of the Copernicus point stays the same in direction East,NB! - only for 2018,2018
+62,cprnc_lc1s,INTEGER,,-,"C1(Instructions), p.150, sec.9.1.9",The extent (in meters) to which the land cover of the Copernicus point stays the same in direction South,NB! - only for 2018,2018
+63,cprnc_lc1w,INTEGER,,-,"C1(Instructions), p.150, sec.9.1.9",The extent (in meters) to which the land cover of the Copernicus point stays the same in direction West,NB! - only for 2018,2018
+64,cprn_lc1n_brdth,INTEGER,,-,"C1(Instructions), p.150, sec.9.1.9",The breath (in %) to the next Copernicus land cover in direction North,NB! - only for 2018,2018
+65,cprn_lc1e_brdth,INTEGER,,-,"C1(Instructions), p.150, sec.9.1.9",The breath (in %) to the next Copernicus land cover in direction East,NB! - only for 2018,2018
+66,cprn_lc1s_brdth,INTEGER,,-,"C1(Instructions), p.150, sec.9.1.9",The breath (in %) to the next Copernicus land cover in direction South,NB! - only for 2018,2018
+67,cprn_lc1w_brdth,INTEGER,,-,"C1(Instructions), p.150, sec.9.1.9",The breath (in %) to the next Copernicus land cover in direction West,NB! - only for 2018,2018
+68,cprn_lc1n_next,TEXT,,-,Harmonized C3 document,Copernicus module: breadth (in % of horizontal width on ground photo) of closest visible land cover type as seen from survey location in direction North.,NB! - only for 2018,2018
+69,cprn_lc1s_next,TEXT,,-,Harmonized C3 document,Copernicus module: breadth (in % of horizontal width on ground photo) of closest visible land cover type as seen from survey location in direction South.,NB! - only for 2018,2018
+70,cprn_lc1e_next,TEXT,,-,Harmonized C3 document,Copernicus module: breadth (in % of horizontal width on ground photo) of closest visible land cover type as seen from survey location in direction East.,NB! - only for 2018,2018
+71,cprn_lc1w_next,TEXT,,-,Harmonized C3 document,Copernicus module: breadth (in % of horizontal width on ground photo) of closest visible land cover type as seen from survey location in direction West.,NB! - only for 2018,2018
+72,cprn_urban,INTEGER,,"1 - Yes; 
+2 - No; 
+8 - Not relevant","C1(Instructions), p.151, sec.9.1.10.1",Is the Copernicus point located in an urban area.,NB! - only for 2018,2018
+73,cprn_impervious_perc,INTEGER,,-,"C1(Instructions), p.151, sec.9.1.10.1",Assess the percentage of impervious surfaces,NB! - only for 2018,2018
+74,inspire_plcc1,INTEGER,,-,"C1(Instructions), p.151, sec.9.1.10.2",Assess the percentage of coniferous trees,NB! - only for 2018,2015 2018
+75,inspire_plcc2,INTEGER,,-,"C1(Instructions), p.151, sec.9.1.10.2",Assess the percentage of broadleaved trees,NB! - only for 2018,2015 2018
+76,inspire_plcc3,INTEGER,,-,"C1(Instructions), p.151, sec.9.1.10.2",Assess the percentage of shrubs,NB! - only for 2018,2015 2018
+77,inspire_plcc4,INTEGER,,-,"C1(Instructions), p.151, sec.9.1.10.2",Assess the percentage of herbaceous plants,NB! - only for 2018,2015 2018
+78,inspire_plcc5,INTEGER,,-,"C1(Instructions), p.151, sec.9.1.10.2",Assess the percentage of lichens and mosses,NB! - only for 2018,2015 2018
+79,inspire_plcc6,INTEGER,,-,"C1(Instructions), p.151, sec.9.1.10.2",Assess the percentage of consolidated (bare) surface (e.g. rock outcrops),NB! - only for 2018,2015 2018
+80,inspire_plcc7,INTEGER,,-,"C1(Instructions), p.151, sec.9.1.10.2",Assess the percentage of unconsolidated (bare) surface (e.g. sand),NB! - only for 2018,2015 2018
+81,inspire_plcc8,INTEGER,,-,"C1(Instructions), p.151, sec.9.1.10.2","Sum of all classes must be 100%. This field covers for the difference, if it exists.",NB! - only for 2018,2015 2018
+82,eunis_complex,INTEGER,,"6 - X06; 
+9 - X09; 
+10 - Other; 
+11 - Unknown; 
+88 - Not relevant","C1(Instructions), p.152, sec.9.1.11",EUNIS habitat classification,NB! - only for 2018,2018
+83,grassland_sample,INTEGER,,"0 - TRUE; 
+1 - False;","C1(Instructions), p.152, sec.9.1.12",Whether or not the point is part of the grassland module,NB! - only for 2018,2018
+84,grass_cando,INTEGER,,"1 - Yes; 
+2 - No;
+8 - Not relevant;","C1(Instructions), p.152, sec.9.1.12",Is a grassland survey possible?,NB! - only for 2018,2018
+85,wm,INTEGER,,"1 - Irrigation; 
+2 - Potential irrigation; 
+3 - Drainage; 
+4 - Irrigation and drainage; 
+5 - No visible water management; 
+8 - Not relevant; ","C1(Instructions), p.162, sec.9.1.13",What type of water management is present at the point,,2009 2012 2015 2018
+86,wm_source,INTEGER,,"1 - Well; 
+2 - Pond/Lake/Reservoir; 
+3 - Stream/Canal/Ditch; 
+4 - Lagoon/Wastewater; 
+5 - Other/Not Identifiable; 
+6 - Combo - Pond/Lake/Reservoir + Stream/Canal/Ditch; 
+8 - Not relevant; 
+16 - Other/Not Identifiable; 
+17 - Combo - Other/Not Identifiable + Well;
+18 - Combo - Other/Not Identifiable + Pond/Lake/Reservoir; 
+20 - Combo - Other/Not Identifiable + Stream/Canal/Ditch; 
+24 - Combo - Other/Not Identifiable + Lagoon/Wastewater;","C1(Instructions), p.163, sec.9.1.13",What is the source of the irrigation at the point,Combo classes exist only for 2009 and were later discontinued. Find more details check the documentation link.,2009 2012 2015 2018
+87,wm_type,INTEGER,,"1 - Gravity; 
+2 - Pressure: Sprinkle irrigation; 
+3 - Pressure: Micro-irrigation; 
+4 - Gravity/Pressure; 
+5 - Other/Non identifiable; 
+6 - Combo - Pressure: Sprinkle irrigation + Pressure: Micro-irrigation; 
+8 - Not relevant; 
+9 - Combo - Gravity/Pressure + Gravity; 
+10 - Combo - Pressure: Sprinkle irrigation + Gravity/Pressure; 
+12 - Combo - Pressure: Micro-irrigation + Gravity/Pressure; 
+16 - Other/not identifiable; 
+17 - Combo - Other/Non identifiable + Gravity; 
+18 - Combo - Other/Non identifiable + Gravity/Pressure; 
+24 - Combo - Other/Non identifiable + Gravity/Pressure + Pressure: Micro-irrigation;","C1(Instructions), p.162-163, sec.9.1.13",The type of irrigation present at the point,Combo classes exist only for 2009 and were later discontinued. Find more details check the documentation link.,2009 2012 2015 2018
+88,wm_delivery,INTEGER,,"1 - Canal; 
+2 - Ditch; 
+3 - Pipeline; 
+4 - Other/Non identifiable; 
+5 - Other/Non identifiable + Canal; 
+6 - Combo - Pipeline + Ditch; 
+8 - Not relevant; 
+10 - Combo - Other/Non identifiable + Ditch; 
+12 - Combo - Other/Non identifiable + Pipeline;","C1(Instructions), p.163-164, sec.9.1.13",The irrigation delivery system at the point,Combo classes exist only for 2009 and were later discontinued. Find more details check the documentation link. ,2009 2012 2015 2018
+89,erosion_cando,INTEGER,,"1 - Yes; 
+2 - No; 
+8 - Not relevant;","C1(Instructions), p.168, sec.9.1.15",Indicates whether a point is foreseen for assessing erosion (Yes) or not (No),NB! - only for 2018,2018
+90,soil_stones_perc,TEXT,,"1 - < 10; 
+2 - 10 - 25; 
+3 - 25 - 50; 
+4 - > 50;
+8 – Not relevant;","C1(Instructions), p.164, sec.9.1.14.2",Indicate the percentage of stones on the surface (does not include stones covered by soil),NB! - This coding applies only for the years 2009 – 2015. For 2018 the number represents the percentage of stones on the surface (0-100). The variable does not exist for 2006,2009 2012 2015 2018
+91,bio_sample,INTEGER,,"0 - True; 
+1 - False",,Is the point a biodiversity sample point?,NB! - only for 2018,2018
+92,soil_bio_taken,INTEGER,,"0 - True; 
+1 - False;
+8 - Not relevant;",C1(Instructions),Was a soil-biodiversity sample taken?,,2018
+93,bulk0_10_sample,INTEGER,,"0 - True; 
+1 - False",,Indicates whether a point is foreseen for collecting the bulk density between the given range,,2018
+94,soil_blk_0_10_taken,INTEGER,,"1 - Yes; 
+2 – No;
+8 - Not relevant;",C1(Instructions),Has the soil sample between the given range been taken?,,2018
+95,bulk10_20_sample,INTEGER,,"0 - True; 
+1 - False",C1(Instructions),Indicates whether a point is foreseen for collecting the bulk density between the given range,,2018
+96,soil_blk_10_20_taken,INTEGER,,"1 - Yes; 
+2 – No;
+8 - Not relevant;",C1(Instructions),Has the soil sample between the given range been taken?,,2018
+97,bulk20_30_sample,INTEGER,,"0 - True; 
+1 - False",C1(Instructions),Indicates whether a point is foreseen for collecting the bulk density between the given range,,2018
+98,soil_blk_20_30_taken,INTEGER,,"1 - Yes; 
+2 – No;
+8 - Not relevant;",C1(Instructions),Has the soil sample between the given range been taken?,,2018
+99,standard_sample,INTEGER,,"0 - True; 
+1 - False",C1(Instructions),Is the point is a standard soil point?,,2018
+100,soil_std_taken,INTEGER,,"1 - Yes; 
+2 – No;
+8 - Not relevant;",C1(Instructions),Is the standard soil sample was taken?,,2018
+101,organic_sample,INTEGER,,"0 - True; 
+1 - False",C1(Instructions),Is the point an organic sample point?,,2018
+102,soil_org_depth_cando,INTEGER,,"1 - Yes; 
+2 – No;
+8 - Not relevant;",C1(Instructions),Can depth be evaluated?,,2018
+103,soil_taken,INTEGER,,"1 – Yes
+2 – Not possible
+3 – No, already taken
+4 – No sample required
+8 – Not Relevant",C1(Instructions),Has a soil sample been taken (before 2018),,2009 2012 2015
+104,soil_crop,INTEGER,,"1 - < 10; 
+2 - 10 - 25; 
+3 - 25 - 50; 
+4 - > 50; 
+8 - Not relevant;",C1(Instructions),Percentage of residual crop (only 2015),,2009 2012 2015
+105,photo_point,INTEGER,,"1 - Yes; 
+2 – No;
+8 - Not relevant;",C1(Instructions),Has a photo on the point been taken?,,all
+106,photo_north,INTEGER,,"1 - Yes; 
+2 – No;
+8 - Not relevant;",C1(Instructions),Has a photo looking north been taken?,,all
+107,photo_south,INTEGER,,"1 - Yes; 
+2 – No;
+8 - Not relevant;",C1(Instructions),Has a photo looking south been taken?,,all
+108,photo_east,INTEGER,,"1 - Yes; 
+2 – No;
+8 - Not relevant;",C1(Instructions),Has a photo looking east been taken?,,all
+109,photo_west,INTEGER,,"1 - Yes; 
+2 – No;
+8 - Not relevant;",C1(Instructions),Has a photo looking west been taken?,,all
+110,transect,TEXT,,-,,The changes in land cover as recorded by the east-facing transect line,,2009 2012 2015
+111,revisit,INTEGER,NA,NA,NA,Number of visits to the point throughout the survey years,NA,NA
+112,th_gps_dist,DECIMAL,NA,NA,NA,Calculated distance between theoretical and recorded location,NA,NA
+113,file_path_gisco_north,TEXT,,-,,File path to north-facing photo as stored on ESTAT GISCO sever.,,all
+114,file_path_gisco_south,TEXT,,-,,File path to south-facing photo as stored on ESTAT GISCO sever.,,all
+115,file_path_gisco_east,TEXT,,-,,File path to east-facing photo as stored on ESTAT GISCO sever.,,all
+116,file_path_gisco_west,TEXT,,-,,File path to west-facing photo as stored on ESTAT GISCO sever.,,all
+117,file_path_gisco_point,TEXT,,-,,File path to point-facing photo as stored on ESTAT GISCO sever.,,all

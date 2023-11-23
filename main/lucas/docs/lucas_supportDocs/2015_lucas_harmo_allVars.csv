@@ -1,0 +1,810 @@
+"","var","code","label","whereClause"
+"1","lc1","'A11'","'Buildings with 1 to 3 floors'",NA
+"2","lc1","'A12'","'Buildings with more than 3 floors'",NA
+"3","lc1","'A13'","'Greenhouses'",NA
+"4","lc1","'A21'","'Non built-up area features'",NA
+"5","lc1","'A22'","'Non built-up linear features'",NA
+"6","lc1","'A30'","'Other artificial areas'",NA
+"7","lc1","'B11'","'Common wheat'",NA
+"8","lc1","'B12'","'Durum wheat'",NA
+"9","lc1","'B13'","'Barley'",NA
+"10","lc1","'B14'","'Rye'",NA
+"11","lc1","'B15'","'Oats'",NA
+"12","lc1","'B16'","'Maize'",NA
+"13","lc1","'B17'","'Rice'",NA
+"14","lc1","'B18'","'Triticale'",NA
+"15","lc1","'B19'","'Other cereals'",NA
+"16","lc1","'B21'","'Potatoes'",NA
+"17","lc1","'B22'","'Sugar beet'",NA
+"18","lc1","'B23'","'Other root crops'",NA
+"19","lc1","'B31'","'Sunflower'",NA
+"20","lc1","'B32'","'Rape and turnip rape'",NA
+"21","lc1","'B33'","'Soya'",NA
+"22","lc1","'B34'","'Cotton'",NA
+"23","lc1","'B35'","'Other fibre and oleaginous crops'",NA
+"24","lc1","'B36'","'Tobacco'",NA
+"25","lc1","'B37'","'Other non-permanent industrial crops'",NA
+"26","lc1","'B41'","'Dry pulses'",NA
+"27","lc1","'B42'","'Tomatoes'",NA
+"28","lc1","'B43'","'Other fresh vegetables'",NA
+"29","lc1","'B44'","'Floriculture and ornamental plants'",NA
+"30","lc1","'B45'","'Strawberries'",NA
+"31","lc1","'B51'","'Clovers'",NA
+"32","lc1","'B52'","'Lucerne'",NA
+"33","lc1","'B53'","'Other leguminous and mixtures for fodder'",NA
+"34","lc1","'B54'","'Mixed cereals for fodder'",NA
+"35","lc1","'B55'","'Temporary grasslands'",NA
+"36","lc1","'B71'","'Apple fruit'",NA
+"37","lc1","'B72'","'Pear fruit'",NA
+"38","lc1","'B73'","'Cherry fruit'",NA
+"39","lc1","'B74'","'Nuts trees'",NA
+"40","lc1","'B75'","'Other fruit trees and berries'",NA
+"41","lc1","'B76'","'Oranges'",NA
+"42","lc1","'B77'","'Other citrus fruit'",NA
+"43","lc1","'B81'","'Olive groves'",NA
+"44","lc1","'B82'","'Vineyards'",NA
+"45","lc1","'B83'","'Nurseries'",NA
+"46","lc1","'B84'","'Permanent industrial crops'",NA
+"47","lc1","'BX1'","'Arable land (only PI)'",NA
+"48","lc1","'BX2'","'Permanent crops (only PI)'",NA
+"49","lc1","'C10'","'Broadleaved woodland'",NA
+"50","lc1","'C21'","'Spruce dominated coniferous woodland'",NA
+"51","lc1","'C22'","'Pine dominated coniferous woodland'",NA
+"52","lc1","'C23'","'Other coniferous woodland'",NA
+"53","lc1","'C31'","'Spruce dominated mixed woodland'",NA
+"54","lc1","'C32'","'Pine dominated mixed woodland'",NA
+"55","lc1","'C33'","'Other mixed woodland'",NA
+"56","lc1","'D10'","'Shrubland with sparse tree cover'",NA
+"57","lc1","'D20'","'Shrubland without tree cover'",NA
+"58","lc1","'E10'","'Grassland with sparse tree/shrub cover'",NA
+"59","lc1","'E20'","'Grassland without tree/shrub cover'",NA
+"60","lc1","'E30'","'Spontaneously vegetated surfaces'",NA
+"61","lc1","'F10'","'Rocks and stones'",NA
+"62","lc1","'F20'","'Sand'",NA
+"63","lc1","'F30'","'Lichens and moss'",NA
+"64","lc1","'F40'","'Other bare soil'",NA
+"65","lc1","'G11'","'Inland fresh water bodies'",NA
+"66","lc1","'G12'","'Inland salty water bodies'",NA
+"67","lc1","'G21'","'Inland fresh running water'",NA
+"68","lc1","'G22'","'Inland salty running water'",NA
+"69","lc1","'G30'","'Transitional water bodies'",NA
+"70","lc1","'G50'","'Glaciers, permanent snow'",NA
+"71","lc1","'H11'","'Inland marshes'",NA
+"72","lc1","'H12'","'Peatbogs'",NA
+"73","lc1","'H21'","'Salt marshes'",NA
+"74","lc1","'H22'","'Salines and other chemical deposits'",NA
+"75","lc1","'H23'","'Intertidal flats'",NA
+"76","lc1","'8'","'Not relevant'",NA
+"77","lc2","'A11'","'Buildings with 1 to 3 floors'",NA
+"78","lc2","'A12'","'Buildings with more than 3 floors'",NA
+"79","lc2","'A13'","'Greenhouses'",NA
+"80","lc2","'A21'","'Non built-up area features'",NA
+"81","lc2","'A22'","'Non built-up linear features'",NA
+"82","lc2","'A30'","'Other artificial areas'",NA
+"83","lc2","'B11'","'Common wheat'",NA
+"84","lc2","'B12'","'Durum wheat'",NA
+"85","lc2","'B13'","'Barley'",NA
+"86","lc2","'B14'","'Rye'",NA
+"87","lc2","'B15'","'Oats'",NA
+"88","lc2","'B16'","'Maize'",NA
+"89","lc2","'B17'","'Rice'",NA
+"90","lc2","'B18'","'Triticale'",NA
+"91","lc2","'B19'","'Other cereals'",NA
+"92","lc2","'B21'","'Potatoes'",NA
+"93","lc2","'B22'","'Sugar beet'",NA
+"94","lc2","'B23'","'Other root crops'",NA
+"95","lc2","'B31'","'Sunflower'",NA
+"96","lc2","'B32'","'Rape and turnip rape'",NA
+"97","lc2","'B33'","'Soya'",NA
+"98","lc2","'B34'","'Cotton'",NA
+"99","lc2","'B35'","'Other fibre and oleaginous crops'",NA
+"100","lc2","'B36'","'Tobacco'",NA
+"101","lc2","'B37'","'Other non-permanent industrial crops'",NA
+"102","lc2","'B41'","'Dry pulses'",NA
+"103","lc2","'B42'","'Tomatoes'",NA
+"104","lc2","'B43'","'Other fresh vegetables'",NA
+"105","lc2","'B44'","'Floriculture and ornamental plants'",NA
+"106","lc2","'B45'","'Strawberries'",NA
+"107","lc2","'B51'","'Clovers'",NA
+"108","lc2","'B52'","'Lucerne'",NA
+"109","lc2","'B53'","'Other leguminous and mixtures for fodder'",NA
+"110","lc2","'B54'","'Mixed cereals for fodder'",NA
+"111","lc2","'B55'","'Temporary grasslands'",NA
+"112","lc2","'B71'","'Apple fruit'",NA
+"113","lc2","'B72'","'Pear fruit'",NA
+"114","lc2","'B73'","'Cherry fruit'",NA
+"115","lc2","'B74'","'Nuts trees'",NA
+"116","lc2","'B75'","'Other fruit trees and berries'",NA
+"117","lc2","'B76'","'Oranges'",NA
+"118","lc2","'B77'","'Other citrus fruit'",NA
+"119","lc2","'B81'","'Olive groves'",NA
+"120","lc2","'B82'","'Vineyards'",NA
+"121","lc2","'B83'","'Nurseries'",NA
+"122","lc2","'B84'","'Permanent industrial crops'",NA
+"123","lc2","'BX1'","'Arable land (only PI)'",NA
+"124","lc2","'BX2'","'Permanent crops (only PI)'",NA
+"125","lc2","'C10'","'Broadleaved woodland'",NA
+"126","lc2","'C21'","'Spruce dominated coniferous woodland'",NA
+"127","lc2","'C22'","'Pine dominated coniferous woodland'",NA
+"128","lc2","'C23'","'Other coniferous woodland'",NA
+"129","lc2","'C31'","'Spruce dominated mixed woodland'",NA
+"130","lc2","'C32'","'Pine dominated mixed woodland'",NA
+"131","lc2","'C33'","'Other mixed woodland'",NA
+"132","lc2","'D10'","'Shrubland with sparse tree cover'",NA
+"133","lc2","'D20'","'Shrubland without tree cover'",NA
+"134","lc2","'E10'","'Grassland with sparse tree/shrub cover'",NA
+"135","lc2","'E20'","'Grassland without tree/shrub cover'",NA
+"136","lc2","'E30'","'Spontaneously vegetated surfaces'",NA
+"137","lc2","'F10'","'Rocks and stones'",NA
+"138","lc2","'F20'","'Sand'",NA
+"139","lc2","'F30'","'Lichens and moss'",NA
+"140","lc2","'F40'","'Other bare soil'",NA
+"141","lc2","'G11'","'Inland fresh water bodies'",NA
+"142","lc2","'G12'","'Inland salty water bodies'",NA
+"143","lc2","'G21'","'Inland fresh running water'",NA
+"144","lc2","'G22'","'Inland salty running water'",NA
+"145","lc2","'G30'","'Transitional water bodies'",NA
+"146","lc2","'G50'","'Glaciers, permanent snow'",NA
+"147","lc2","'H11'","'Inland marshes'",NA
+"148","lc2","'H12'","'Peatbogs'",NA
+"149","lc2","'H21'","'Salt marshes'",NA
+"150","lc2","'H22'","'Salines and other chemical deposits'",NA
+"151","lc2","'H23'","'Intertidal flats'",NA
+"152","lc2","'8'","'Not relevant'",NA
+"153","lc1_spec","'B19A'","'Sorghum (Sorghum bicolor)'",NA
+"154","lc1_spec","'B19B'","'Buckwheat (Fagopyrum esculentum Mill.)'",NA
+"155","lc1_spec","'B19C'","'Common, golden or proso millet (Panicum miliaceum L.)'",NA
+"156","lc1_spec","'B19D'","'Canary grass (Phalaris canariensis L.)'",NA
+"157","lc1_spec","'B19F'","'Quinoa (Chenopodium quinoa)'",NA
+"158","lc1_spec","'B19G'","'Fonio (Digitaria spp.)'",NA
+"159","lc1_spec","'B19H'","'Other cereals not specified elsewhere'",NA
+"160","lc1_spec","'B23A'","'Fodder beet (roots of Beta vulgaris)'",NA
+"161","lc1_spec","'B23B'","'Fodder kale (Brassica oleracea L.)'",NA
+"162","lc1_spec","'B23C'","'Swedes (Brassica napus L. var. napobrassica (L.) Robb.)'",NA
+"163","lc1_spec","'B23D'","'Carrots (roots of Daucus carota L.)'",NA
+"164","lc1_spec","'B23E'","'Turnips (roots of Brassica rapa L.)'",NA
+"165","lc1_spec","'B23F'","'Jerusalem artichoke (Helianthus tuberosus L.)'",NA
+"166","lc1_spec","'B23G'","'Sweet potatoes (Ipomoea batatas (L.) Lam.)'",NA
+"167","lc1_spec","'B23H'","'Fodder parsnips (Pastinaca sativa L.)'",NA
+"168","lc1_spec","'B23I'","'Yam (Discorea sp.)'",NA
+"169","lc1_spec","'B23J'","'Manioc, Cassava (Manihot esculenta Crantz, syn. M. utilissima)'",NA
+"170","lc1_spec","'B23K'","'Horseradish (Cochlearia armoracia)'",NA
+"171","lc1_spec","'B23L'","'Tuberous chervil (Chaerophyllum bulbosum)'",NA
+"172","lc1_spec","'B23M'","'Other tropical tubers'",NA
+"173","lc1_spec","'B23N'","'Other root or tuber crops not specified elsewhere'",NA
+"174","lc1_spec","'B35A'","'Flax (Linum usitatissimum straw)'",NA
+"175","lc1_spec","'B35B'","'Hemp (Cannabis sativa straw)'",NA
+"176","lc1_spec","'B35C'","'Poppy seeds (Papaver somniferum L.)'",NA
+"177","lc1_spec","'B35D'","'Mustard seeds (Sinapis alba L., Sinapis nigra)'",NA
+"178","lc1_spec","'B35E'","'Safflower (Carthamus tinctorius L.)'",NA
+"179","lc1_spec","'B35F'","'Earth almond (Cyperus esculentus L.)'",NA
+"180","lc1_spec","'B35G'","'Sesame (Sesamum indicum)'",NA
+"181","lc1_spec","'B35H'","'Jute (Corchorus spp.)'",NA
+"182","lc1_spec","'B35I'","'Ramie (Boehmeria nivea)'",NA
+"183","lc1_spec","'B35J'","'Sisal (Agave sisalana)'",NA
+"184","lc1_spec","'B35K'","'Kenaf (Hibiscus cannabinus)'",NA
+"185","lc1_spec","'B35L'","'Bird rape (Brassica rapa var. silvestris)'",NA
+"186","lc1_spec","'B35M'","'Castor beans (Ricinus communis)'",NA
+"187","lc1_spec","'B35N'","'Other fibre and oleaginous crops not elsewhere specified'",NA
+"188","lc1_spec","'B37A'","'Chicory roots (Cichorium intybus var. sativum)'",NA
+"189","lc1_spec","'B37B'","'Hops (Humulus lupulus)'",NA
+"190","lc1_spec","'B37C'","'Medicinal plants (see C3)'",NA
+"191","lc1_spec","'B37D'","'Spices and aromatic plants (see C3)'",NA
+"192","lc1_spec","'B37E'","'Sugar cane (Saccharum officinarum)'",NA
+"193","lc1_spec","'B37F'","'Other non permanent industrial crops not specified elsewhere'",NA
+"194","lc1_spec","'B43A'","'Brassicas'",NA
+"195","lc1_spec","'B43B'","'Leaf and stalked vegetables other than brassicas (see C3)'",NA
+"196","lc1_spec","'B43C'","'Leguminous vegetables, incl. production for tins'",NA
+"197","lc1_spec","'B43D'","'roots-bulbs-tubers'",NA
+"198","lc1_spec","'B43E'","'Vegetables cultivated for fruit other than tomatoes'",NA
+"199","lc1_spec","'B43F'","'Cultivated mushrooms'",NA
+"200","lc1_spec","'B43G'","'Wild products (e.g.truffle, water chesnut)'",NA
+"201","lc1_spec","'B43H'","'Other fresh vegetables not specified elsewhere'",NA
+"202","lc1_spec","'B53A'","'Sainfoin (Onobrychis viciifolia Scop.)'",NA
+"203","lc1_spec","'B53B'","'Sweet clover or Trefoil (Lotus corniculatus L.)'",NA
+"204","lc1_spec","'B53C'","'Chickling vetch (Lathyrus sativus)'",NA
+"205","lc1_spec","'B53D'","'Black medick (Medicago lupulina L.)'",NA
+"206","lc1_spec","'B53E'","'Melilot (Melilotus alba Lam.)'",NA
+"207","lc1_spec","'B53F'","'Serradella (Ornithopus sativus)'",NA
+"208","lc1_spec","'B53G'","'Fenugreek (Trigonella foenum-graecum)'",NA
+"209","lc1_spec","'B53H'","'Sulla (Hedysarium coronarium)'",NA
+"210","lc1_spec","'B53I'","'Sweet lupins (Lupinus albus, Lupinus angustifolius, Lupinus luteus)'",NA
+"211","lc1_spec","'B53J'","'California bluebell (Phacelia tanacetifolia)'",NA
+"212","lc1_spec","'B53K'","'Other leguminous and mixtures for foddernot specified elsewhere'",NA
+"213","lc1_spec","'B75A'","'Apricot (Prunus armeniaca)'",NA
+"214","lc1_spec","'B75B'","'Cornel (Cornus mas)'",NA
+"215","lc1_spec","'B75C'","'Figs (Ficus carica)'",NA
+"216","lc1_spec","'B75D'","'Juneberry (Amelanchier vulgaris)'",NA
+"217","lc1_spec","'B75E'","'Kiwi (Actinidia chinensis)'",NA
+"218","lc1_spec","'B75F'","'Loquat (Eriobotrya japonica)'",NA
+"219","lc1_spec","'B75G'","'Medlar (Mespilus germanica)'",NA
+"220","lc1_spec","'B75H'","'Mirabellas (Prunus insititia var. syriaca)'",NA
+"221","lc1_spec","'B75I'","'Peach, nectarine and platerine (Prunus persica; Amygdalus persica;Persica laevis)'",NA
+"222","lc1_spec","'B75J'","'Persimons (Diospyros kaki)'",NA
+"223","lc1_spec","'B75K'","'Plums (Prunus domestica)'",NA
+"224","lc1_spec","'B75L'","'Pomegranates (Punica granatum)'",NA
+"225","lc1_spec","'B75M'","'Oleaster (Eleagnus sp.)'",NA
+"226","lc1_spec","'B75N'","'Quinces (Cydonia oblonga)'",NA
+"227","lc1_spec","'B75O'","'Sloes (Prunus spinosa)'",NA
+"228","lc1_spec","'B75P'","'Small fruits and berries (see C3)'",NA
+"229","lc1_spec","'B75Q'","'Tropical fruits (see C3)'",NA
+"230","lc1_spec","'B75R'","'Other fruit trees and berries not specified elsewhere'",NA
+"231","lc1_spec","'B77A'","'Bergamot (Citrus bergamia)'",NA
+"232","lc1_spec","'B77B'","'Citron (Citrus. medica var. cedrata)'",NA
+"233","lc1_spec","'B77C'","'Grapefruit and pomelo (Citrus maxima, C. grandis, C. paradisea)'",NA
+"234","lc1_spec","'B77D'","'Lemons (Citrus limon)'",NA
+"235","lc1_spec","'B77E'","'Limes (Citrus aurantifolia, Citrus limetta)'",NA
+"236","lc1_spec","'B77F'","'Satsumas (Citrus unshiu)'",NA
+"237","lc1_spec","'B77G'","'Mandarines (Citrus deliciosa, C. nobilis)'",NA
+"238","lc1_spec","'B77H'","'Clementines (C. clementina)'",NA
+"239","lc1_spec","'B77I'","'Kumquats (Fortunella spp.)'",NA
+"240","lc1_spec","'B77J'","'Citrus orchards'",NA
+"241","lc1_spec","'B77K'","'Other citrus fruit not specified elsewhere'",NA
+"242","lc1_spec","'B83A'","'Horticultural nurseries'",NA
+"243","lc1_spec","'B83B'","'Vine and root-stock nurseries'",NA
+"244","lc1_spec","'B83C'","'Fruit trees nurseries'",NA
+"245","lc1_spec","'B83D'","'Ornamental plants nurseries'",NA
+"246","lc1_spec","'B83E'","'Trees and bushes nurseries'",NA
+"247","lc1_spec","'B83F'","'Forest tree nurseries'",NA
+"248","lc1_spec","'B83G'","'Other, non-specialized nurseries'",NA
+"249","lc1_spec","'B84A'","'Reeds (when cultivated and not natural)'",NA
+"250","lc1_spec","'B84B'","'Other plants for plaiting (osier, rushes, rattans)'",NA
+"251","lc1_spec","'B84C'","'Coffee'",NA
+"252","lc1_spec","'B84D'","'Tea'",NA
+"253","lc1_spec","'B84E'","'Other industrial plants for beverages (cocoa, mate)'",NA
+"254","lc1_spec","'B84F'","'Industrial plants for oil (coconut, palm)'",NA
+"255","lc1_spec","'B84G'","'Permanent aromatic plants (see doc. C3)'",NA
+"256","lc1_spec","'B84H'","'Permanent textile plants (abaca, agave, kapok, etc.)'",NA
+"257","lc1_spec","'B84I'","'Plants for rubber and tanin (see doc. C3)'",NA
+"258","lc1_spec","'B84J'","'Rose trees cultivated for rose-oil production (not as ornamental plants)'",NA
+"259","lc1_spec","'B84K'","'Other permanent industrial crops (see doc. C3)'",NA
+"260","lc1_spec","'B84L'","'Miscanthus'",NA
+"261","lc1_spec","'B84M'","'Willow'",NA
+"262","lc1_spec","'C101'","'Broadleaved woodland - Boreal forest'",NA
+"263","lc1_spec","'C102'","'Broadleaved woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"264","lc1_spec","'C103'","'Broadleaved woodland - Alpine coniferous forest'",NA
+"265","lc1_spec","'C104'","'Broadleaved woodland - Acidophilous oak and oak-birch forest'",NA
+"266","lc1_spec","'C105'","'Broadleaved woodland - Mesophytic deciduous forest'",NA
+"267","lc1_spec","'C106'","'Broadleaved woodland - Beech forest'",NA
+"268","lc1_spec","'C107'","'Broadleaved woodland - Mountainous beech forest'",NA
+"269","lc1_spec","'C108'","'Broadleaved woodland - Thermophilous deciduous forest'",NA
+"270","lc1_spec","'C109'","'Broadleaved woodland - Broadleaved evergreen forest'",NA
+"271","lc1_spec","'C10A'","'Broadleaved woodland - Coniferous forest of the Mediterranean region'",NA
+"272","lc1_spec","'C10B'","'Broadleaved woodland - Mire and swamp forests'",NA
+"273","lc1_spec","'C10C'","'Broadleaved woodland - Floodplain forest'",NA
+"274","lc1_spec","'C10D'","'Broadleaved woodland - Non-riverine alder, birch or aspen forest'",NA
+"275","lc1_spec","'C10E'","'Broadleaved woodland - Exotic forest'",NA
+"276","lc1_spec","'C10Z'","'Broadleaved woodland - Unknown'",NA
+"277","lc1_spec","'C211'","'Spruce dominated coniferous woodland - Boreal forest'",NA
+"278","lc1_spec","'C212'","'Spruce dominated coniferous woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"279","lc1_spec","'C213'","'Spruce dominated coniferous woodland - Alpine coniferous forest'",NA
+"280","lc1_spec","'C214'","'Spruce dominated coniferous woodland - Acidophilous oak and oak-birch forest'",NA
+"281","lc1_spec","'C215'","'Spruce dominated coniferous woodland - Mesophytic deciduous forest'",NA
+"282","lc1_spec","'C216'","'Spruce dominated coniferous woodland - Beech forest'",NA
+"283","lc1_spec","'C217'","'Spruce dominated coniferous woodland - Mountainous beech forest'",NA
+"284","lc1_spec","'C218'","'Spruce dominated coniferous woodland - Thermophilous deciduous forest'",NA
+"285","lc1_spec","'C219'","'Spruce dominated coniferous woodland - Broadleaved evergreen forest'",NA
+"286","lc1_spec","'C21A'","'Spruce dominated coniferous woodland - Coniferous forest of the Mediterranean region'",NA
+"287","lc1_spec","'C21B'","'Spruce dominated coniferous woodland - Mire and swamp forests'",NA
+"288","lc1_spec","'C21E'","'Spruce dominated coniferous woodland - Exotic forest'",NA
+"289","lc1_spec","'C221'","'Pine dominated coniferous woodland - Boreal forest'",NA
+"290","lc1_spec","'C222'","'Pine dominated coniferous woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"291","lc1_spec","'C223'","'Pine dominated coniferous woodland - Alpine coniferous forest'",NA
+"292","lc1_spec","'C224'","'Pine dominated coniferous woodland - Acidophilous oak and oak-birch forest'",NA
+"293","lc1_spec","'C225'","'Pine dominated coniferous woodland - Mesophytic deciduous forest'",NA
+"294","lc1_spec","'C226'","'Pine dominated coniferous woodland - Beech forest'",NA
+"295","lc1_spec","'C227'","'Pine dominated coniferous woodland - Mountainous beech forest'",NA
+"296","lc1_spec","'C228'","'Pine dominated coniferous woodland - Thermophilous deciduous forest'",NA
+"297","lc1_spec","'C229'","'Pine dominated coniferous woodland - Broadleaved evergreen forest'",NA
+"298","lc1_spec","'C22A'","'Pine dominated coniferous woodland - Coniferous forest of the Mediterranean region'",NA
+"299","lc1_spec","'C22B'","'Pine dominated coniferous woodland - Mire and swamp forests'",NA
+"300","lc1_spec","'C22C'","'Pine dominated coniferous woodland - Floodplain forest'",NA
+"301","lc1_spec","'C22D'","'Pine dominated coniferous woodland - Non-riverine alder, birch or aspen forest'",NA
+"302","lc1_spec","'C22E'","'Pine dominated coniferous woodland - Exotic forest'",NA
+"303","lc1_spec","'C231'","'Other coniferous woodland - Boreal forest'",NA
+"304","lc1_spec","'C232'","'Other coniferous woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"305","lc1_spec","'C233'","'Other coniferous woodland - Alpine coniferous forest'",NA
+"306","lc1_spec","'C234'","'Other coniferous woodland - Acidophilous oak and oak-birch forest'",NA
+"307","lc1_spec","'C235'","'Other coniferous woodland - Mesophytic deciduous forest'",NA
+"308","lc1_spec","'C237'","'Other coniferous woodland - Mountainous beech forest'",NA
+"309","lc1_spec","'C238'","'Other coniferous woodland - Thermophilous deciduous forest'",NA
+"310","lc1_spec","'C23A'","'Other coniferous woodland - Coniferous forest of the Mediterranean region'",NA
+"311","lc1_spec","'C23B'","'Other coniferous woodland - Mire and swamp forests'",NA
+"312","lc1_spec","'C23C'","'Other coniferous woodland - Floodplain forest'",NA
+"313","lc1_spec","'C23E'","'Other coniferous woodland - Exotic forest'",NA
+"314","lc1_spec","'C311'","'Spruce dominated mixed woodland - Boreal forest'",NA
+"315","lc1_spec","'C312'","'Spruce dominated mixed woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"316","lc1_spec","'C313'","'Spruce dominated mixed woodland - Alpine coniferous forest'",NA
+"317","lc1_spec","'C314'","'Spruce dominated mixed woodland - Acidophilous oak and oak-birch forest'",NA
+"318","lc1_spec","'C315'","'Spruce dominated mixed woodland - Mesophytic deciduous forest'",NA
+"319","lc1_spec","'C316'","'Spruce dominated mixed woodland - Beech forest'",NA
+"320","lc1_spec","'C317'","'Spruce dominated mixed woodland - Mountainous beech forest'",NA
+"321","lc1_spec","'C318'","'Spruce dominated mixed woodland - Thermophilous deciduous forest'",NA
+"322","lc1_spec","'C319'","'Spruce dominated mixed woodland - Broadleaved evergreen forest'",NA
+"323","lc1_spec","'C31A'","'Spruce dominated mixed woodland - Coniferous forest of the Mediterranean region'",NA
+"324","lc1_spec","'C31B'","'Spruce dominated mixed woodland - Mire and swamp forests'",NA
+"325","lc1_spec","'C31C'","'Spruce dominated mixed woodland - Floodplain forest'",NA
+"326","lc1_spec","'C31D'","'Spruce dominated mixed woodland - Non-riverine alder, birch or aspen forest'",NA
+"327","lc1_spec","'C31E'","'Spruce dominated mixed woodland - Exotic forest'",NA
+"328","lc1_spec","'C321'","'Pine dominated mixed woodland - Boreal forest'",NA
+"329","lc1_spec","'C322'","'Pine dominated mixed woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"330","lc1_spec","'C323'","'Pine dominated mixed woodland - Alpine coniferous forest'",NA
+"331","lc1_spec","'C324'","'Pine dominated mixed woodland - Acidophilous oak and oak-birch forest'",NA
+"332","lc1_spec","'C325'","'Pine dominated mixed woodland - Mesophytic deciduous forest'",NA
+"333","lc1_spec","'C326'","'Pine dominated mixed woodland - Beech forest'",NA
+"334","lc1_spec","'C327'","'Pine dominated mixed woodland - Mountainous beech forest'",NA
+"335","lc1_spec","'C328'","'Pine dominated mixed woodland - Thermophilous deciduous forest'",NA
+"336","lc1_spec","'C329'","'Pine dominated mixed woodland - Broadleaved evergreen forest'",NA
+"337","lc1_spec","'C32A'","'Pine dominated mixed woodland - Coniferous forest of the Mediterranean region'",NA
+"338","lc1_spec","'C32B'","'Pine dominated mixed woodland - Mire and swamp forests'",NA
+"339","lc1_spec","'C32C'","'Pine dominated mixed woodland - Floodplain forest'",NA
+"340","lc1_spec","'C32D'","'Pine dominated mixed woodland - Non-riverine alder, birch or aspen forest'",NA
+"341","lc1_spec","'C32E'","'Pine dominated mixed woodland - Exotic forest'",NA
+"342","lc1_spec","'C331'","'Other mixed woodland - Boreal forest'",NA
+"343","lc1_spec","'C332'","'Other mixed woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"344","lc1_spec","'C333'","'Other mixed woodland - Alpine coniferous forest'",NA
+"345","lc1_spec","'C334'","'Other mixed woodland - Acidophilous oak and oak-birch forest'",NA
+"346","lc1_spec","'C335'","'Other mixed woodland - Mesophytic deciduous forest'",NA
+"347","lc1_spec","'C336'","'Other mixed woodland - Beech forest'",NA
+"348","lc1_spec","'C337'","'Other mixed woodland - Mountainous beech forest'",NA
+"349","lc1_spec","'C338'","'Other mixed woodland - Thermophilous deciduous forest'",NA
+"350","lc1_spec","'C339'","'Other mixed woodland - Broadleaved evergreen forest'",NA
+"351","lc1_spec","'C33A'","'Other mixed woodland - Coniferous forest of the Mediterranean region'",NA
+"352","lc1_spec","'C33B'","'Other mixed woodland - Mire and swamp forests'",NA
+"353","lc1_spec","'C33C'","'Other mixed woodland - Floodplain forest'",NA
+"354","lc1_spec","'C33D'","'Other mixed woodland - Non-riverine alder, birch or aspen forest'",NA
+"355","lc1_spec","'C33E'","'Other mixed woodland - Exotic forest'",NA
+"356","lc1_spec","'8'","'Not relevant'",NA
+"357","lc2_spec","'B19A'","'Sorghum (Sorghum bicolor)'",NA
+"358","lc2_spec","'B19B'","'Buckwheat (Fagopyrum esculentum Mill.)'",NA
+"359","lc2_spec","'B19C'","'Common, golden or proso millet (Panicum miliaceum L.)'",NA
+"360","lc2_spec","'B19D'","'Canary grass (Phalaris canariensis L.)'",NA
+"361","lc2_spec","'B19F'","'Quinoa (Chenopodium quinoa)'",NA
+"362","lc2_spec","'B19G'","'Fonio (Digitaria spp.)'",NA
+"363","lc2_spec","'B19H'","'Other cereals not specified elsewhere'",NA
+"364","lc2_spec","'B23A'","'Fodder beet (roots of Beta vulgaris)'",NA
+"365","lc2_spec","'B23B'","'Fodder kale (Brassica oleracea L.)'",NA
+"366","lc2_spec","'B23C'","'Swedes (Brassica napus L. var. napobrassica (L.) Robb.)'",NA
+"367","lc2_spec","'B23D'","'Carrots (roots of Daucus carota L.)'",NA
+"368","lc2_spec","'B23E'","'Turnips (roots of Brassica rapa L.)'",NA
+"369","lc2_spec","'B23F'","'Jerusalem artichoke (Helianthus tuberosus L.)'",NA
+"370","lc2_spec","'B23G'","'Sweet potatoes (Ipomoea batatas (L.) Lam.)'",NA
+"371","lc2_spec","'B23H'","'Fodder parsnips (Pastinaca sativa L.)'",NA
+"372","lc2_spec","'B23I'","'Yam (Discorea sp.)'",NA
+"373","lc2_spec","'B23J'","'Manioc, Cassava (Manihot esculenta Crantz, syn. M. utilissima)'",NA
+"374","lc2_spec","'B23K'","'Horseradish (Cochlearia armoracia)'",NA
+"375","lc2_spec","'B23L'","'Tuberous chervil (Chaerophyllum bulbosum)'",NA
+"376","lc2_spec","'B23M'","'Other tropical tubers'",NA
+"377","lc2_spec","'B23N'","'Other root or tuber crops not specified elsewhere'",NA
+"378","lc2_spec","'B35A'","'Flax (Linum usitatissimum straw)'",NA
+"379","lc2_spec","'B35B'","'Hemp (Cannabis sativa straw)'",NA
+"380","lc2_spec","'B35C'","'Poppy seeds (Papaver somniferum L.)'",NA
+"381","lc2_spec","'B35D'","'Mustard seeds (Sinapis alba L., Sinapis nigra)'",NA
+"382","lc2_spec","'B35E'","'Safflower (Carthamus tinctorius L.)'",NA
+"383","lc2_spec","'B35F'","'Earth almond (Cyperus esculentus L.)'",NA
+"384","lc2_spec","'B35G'","'Sesame (Sesamum indicum)'",NA
+"385","lc2_spec","'B35H'","'Jute (Corchorus spp.)'",NA
+"386","lc2_spec","'B35I'","'Ramie (Boehmeria nivea)'",NA
+"387","lc2_spec","'B35J'","'Sisal (Agave sisalana)'",NA
+"388","lc2_spec","'B35K'","'Kenaf (Hibiscus cannabinus)'",NA
+"389","lc2_spec","'B35L'","'Bird rape (Brassica rapa var. silvestris)'",NA
+"390","lc2_spec","'B35M'","'Castor beans (Ricinus communis)'",NA
+"391","lc2_spec","'B35N'","'Other fibre and oleaginous crops not elsewhere specified'",NA
+"392","lc2_spec","'B37A'","'Chicory roots (Cichorium intybus var. sativum)'",NA
+"393","lc2_spec","'B37B'","'Hops (Humulus lupulus)'",NA
+"394","lc2_spec","'B37C'","'Medicinal plants (see C3)'",NA
+"395","lc2_spec","'B37D'","'Spices and aromatic plants (see C3)'",NA
+"396","lc2_spec","'B37E'","'Sugar cane (Saccharum officinarum)'",NA
+"397","lc2_spec","'B37F'","'Other non permanent industrial crops not specified elsewhere'",NA
+"398","lc2_spec","'B43A'","'Brassicas'",NA
+"399","lc2_spec","'B43B'","'Leaf and stalked vegetables other than brassicas (see C3)'",NA
+"400","lc2_spec","'B43C'","'Leguminous vegetables, incl. production for tins'",NA
+"401","lc2_spec","'B43D'","'roots-bulbs-tubers'",NA
+"402","lc2_spec","'B43E'","'Vegetables cultivated for fruit other than tomatoes'",NA
+"403","lc2_spec","'B43F'","'Cultivated mushrooms'",NA
+"404","lc2_spec","'B43G'","'Wild products (e.g.truffle, water chesnut)'",NA
+"405","lc2_spec","'B43H'","'Other fresh vegetables not specified elsewhere'",NA
+"406","lc2_spec","'B53A'","'Sainfoin (Onobrychis viciifolia Scop.)'",NA
+"407","lc2_spec","'B53B'","'Sweet clover or Trefoil (Lotus corniculatus L.)'",NA
+"408","lc2_spec","'B53C'","'Chickling vetch (Lathyrus sativus)'",NA
+"409","lc2_spec","'B53D'","'Black medick (Medicago lupulina L.)'",NA
+"410","lc2_spec","'B53E'","'Melilot (Melilotus alba Lam.)'",NA
+"411","lc2_spec","'B53F'","'Serradella (Ornithopus sativus)'",NA
+"412","lc2_spec","'B53G'","'Fenugreek (Trigonella foenum-graecum)'",NA
+"413","lc2_spec","'B53H'","'Sulla (Hedysarium coronarium)'",NA
+"414","lc2_spec","'B53I'","'Sweet lupins (Lupinus albus, Lupinus angustifolius, Lupinus luteus)'",NA
+"415","lc2_spec","'B53J'","'California bluebell (Phacelia tanacetifolia)'",NA
+"416","lc2_spec","'B53K'","'Other leguminous and mixtures for foddernot specified elsewhere'",NA
+"417","lc2_spec","'B75A'","'Apricot (Prunus armeniaca)'",NA
+"418","lc2_spec","'B75B'","'Cornel (Cornus mas)'",NA
+"419","lc2_spec","'B75C'","'Figs (Ficus carica)'",NA
+"420","lc2_spec","'B75D'","'Juneberry (Amelanchier vulgaris)'",NA
+"421","lc2_spec","'B75E'","'Kiwi (Actinidia chinensis)'",NA
+"422","lc2_spec","'B75F'","'Loquat (Eriobotrya japonica)'",NA
+"423","lc2_spec","'B75G'","'Medlar (Mespilus germanica)'",NA
+"424","lc2_spec","'B75H'","'Mirabellas (Prunus insititia var. syriaca)'",NA
+"425","lc2_spec","'B75I'","'Peach, nectarine and platerine (Prunus persica; Amygdalus persica;Persica laevis)'",NA
+"426","lc2_spec","'B75J'","'Persimons (Diospyros kaki)'",NA
+"427","lc2_spec","'B75K'","'Plums (Prunus domestica)'",NA
+"428","lc2_spec","'B75L'","'Pomegranates (Punica granatum)'",NA
+"429","lc2_spec","'B75M'","'Oleaster (Eleagnus sp.)'",NA
+"430","lc2_spec","'B75N'","'Quinces (Cydonia oblonga)'",NA
+"431","lc2_spec","'B75O'","'Sloes (Prunus spinosa)'",NA
+"432","lc2_spec","'B75P'","'Small fruits and berries (see C3)'",NA
+"433","lc2_spec","'B75Q'","'Tropical fruits (see C3)'",NA
+"434","lc2_spec","'B75R'","'Other fruit trees and berries not specified elsewhere'",NA
+"435","lc2_spec","'B77A'","'Bergamot (Citrus bergamia)'",NA
+"436","lc2_spec","'B77B'","'Citron (Citrus. medica var. cedrata)'",NA
+"437","lc2_spec","'B77C'","'Grapefruit and pomelo (Citrus maxima, C. grandis, C. paradisea)'",NA
+"438","lc2_spec","'B77D'","'Lemons (Citrus limon)'",NA
+"439","lc2_spec","'B77E'","'Limes (Citrus aurantifolia, Citrus limetta)'",NA
+"440","lc2_spec","'B77F'","'Satsumas (Citrus unshiu)'",NA
+"441","lc2_spec","'B77G'","'Mandarines (Citrus deliciosa, C. nobilis)'",NA
+"442","lc2_spec","'B77H'","'Clementines (C. clementina)'",NA
+"443","lc2_spec","'B77I'","'Kumquats (Fortunella spp.)'",NA
+"444","lc2_spec","'B77J'","'Citrus orchards'",NA
+"445","lc2_spec","'B77K'","'Other citrus fruit not specified elsewhere'",NA
+"446","lc2_spec","'B83A'","'Horticultural nurseries'",NA
+"447","lc2_spec","'B83B'","'Vine and root-stock nurseries'",NA
+"448","lc2_spec","'B83C'","'Fruit trees nurseries'",NA
+"449","lc2_spec","'B83D'","'Ornamental plants nurseries'",NA
+"450","lc2_spec","'B83E'","'Trees and bushes nurseries'",NA
+"451","lc2_spec","'B83F'","'Forest tree nurseries'",NA
+"452","lc2_spec","'B83G'","'Other, non-specialized nurseries'",NA
+"453","lc2_spec","'B84A'","'Reeds (when cultivated and not natural)'",NA
+"454","lc2_spec","'B84B'","'Other plants for plaiting (osier, rushes, rattans)'",NA
+"455","lc2_spec","'B84C'","'Coffee'",NA
+"456","lc2_spec","'B84D'","'Tea'",NA
+"457","lc2_spec","'B84E'","'Other industrial plants for beverages (cocoa, mate)'",NA
+"458","lc2_spec","'B84F'","'Industrial plants for oil (coconut, palm)'",NA
+"459","lc2_spec","'B84G'","'Permanent aromatic plants (see doc. C3)'",NA
+"460","lc2_spec","'B84H'","'Permanent textile plants (abaca, agave, kapok, etc.)'",NA
+"461","lc2_spec","'B84I'","'Plants for rubber and tanin (see doc. C3)'",NA
+"462","lc2_spec","'B84J'","'Rose trees cultivated for rose-oil production (not as ornamental plants)'",NA
+"463","lc2_spec","'B84K'","'Other permanent industrial crops (see doc. C3)'",NA
+"464","lc2_spec","'B84L'","'Miscanthus'",NA
+"465","lc2_spec","'B84M'","'Willow'",NA
+"466","lc2_spec","'C101'","'Broadleaved woodland - Boreal forest'",NA
+"467","lc2_spec","'C102'","'Broadleaved woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"468","lc2_spec","'C103'","'Broadleaved woodland - Alpine coniferous forest'",NA
+"469","lc2_spec","'C104'","'Broadleaved woodland - Acidophilous oak and oak-birch forest'",NA
+"470","lc2_spec","'C105'","'Broadleaved woodland - Mesophytic deciduous forest'",NA
+"471","lc2_spec","'C106'","'Broadleaved woodland - Beech forest'",NA
+"472","lc2_spec","'C107'","'Broadleaved woodland - Mountainous beech forest'",NA
+"473","lc2_spec","'C108'","'Broadleaved woodland - Thermophilous deciduous forest'",NA
+"474","lc2_spec","'C109'","'Broadleaved woodland - Broadleaved evergreen forest'",NA
+"475","lc2_spec","'C10A'","'Broadleaved woodland - Coniferous forest of the Mediterranean region'",NA
+"476","lc2_spec","'C10B'","'Broadleaved woodland - Mire and swamp forests'",NA
+"477","lc2_spec","'C10C'","'Broadleaved woodland - Floodplain forest'",NA
+"478","lc2_spec","'C10D'","'Broadleaved woodland - Non-riverine alder, birch or aspen forest'",NA
+"479","lc2_spec","'C10E'","'Broadleaved woodland - Exotic forest'",NA
+"480","lc2_spec","'C10Z'","'Broadleaved woodland - Unknown'",NA
+"481","lc2_spec","'C211'","'Spruce dominated coniferous woodland - Boreal forest'",NA
+"482","lc2_spec","'C212'","'Spruce dominated coniferous woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"483","lc2_spec","'C213'","'Spruce dominated coniferous woodland - Alpine coniferous forest'",NA
+"484","lc2_spec","'C214'","'Spruce dominated coniferous woodland - Acidophilous oak and oak-birch forest'",NA
+"485","lc2_spec","'C215'","'Spruce dominated coniferous woodland - Mesophytic deciduous forest'",NA
+"486","lc2_spec","'C216'","'Spruce dominated coniferous woodland - Beech forest'",NA
+"487","lc2_spec","'C217'","'Spruce dominated coniferous woodland - Mountainous beech forest'",NA
+"488","lc2_spec","'C218'","'Spruce dominated coniferous woodland - Thermophilous deciduous forest'",NA
+"489","lc2_spec","'C219'","'Spruce dominated coniferous woodland - Broadleaved evergreen forest'",NA
+"490","lc2_spec","'C21A'","'Spruce dominated coniferous woodland - Coniferous forest of the Mediterranean region'",NA
+"491","lc2_spec","'C21B'","'Spruce dominated coniferous woodland - Mire and swamp forests'",NA
+"492","lc2_spec","'C21E'","'Spruce dominated coniferous woodland - Exotic forest'",NA
+"493","lc2_spec","'C221'","'Pine dominated coniferous woodland - Boreal forest'",NA
+"494","lc2_spec","'C222'","'Pine dominated coniferous woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"495","lc2_spec","'C223'","'Pine dominated coniferous woodland - Alpine coniferous forest'",NA
+"496","lc2_spec","'C224'","'Pine dominated coniferous woodland - Acidophilous oak and oak-birch forest'",NA
+"497","lc2_spec","'C225'","'Pine dominated coniferous woodland - Mesophytic deciduous forest'",NA
+"498","lc2_spec","'C226'","'Pine dominated coniferous woodland - Beech forest'",NA
+"499","lc2_spec","'C227'","'Pine dominated coniferous woodland - Mountainous beech forest'",NA
+"500","lc2_spec","'C228'","'Pine dominated coniferous woodland - Thermophilous deciduous forest'",NA
+"501","lc2_spec","'C229'","'Pine dominated coniferous woodland - Broadleaved evergreen forest'",NA
+"502","lc2_spec","'C22A'","'Pine dominated coniferous woodland - Coniferous forest of the Mediterranean region'",NA
+"503","lc2_spec","'C22B'","'Pine dominated coniferous woodland - Mire and swamp forests'",NA
+"504","lc2_spec","'C22C'","'Pine dominated coniferous woodland - Floodplain forest'",NA
+"505","lc2_spec","'C22D'","'Pine dominated coniferous woodland - Non-riverine alder, birch or aspen forest'",NA
+"506","lc2_spec","'C22E'","'Pine dominated coniferous woodland - Exotic forest'",NA
+"507","lc2_spec","'C231'","'Other coniferous woodland - Boreal forest'",NA
+"508","lc2_spec","'C232'","'Other coniferous woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"509","lc2_spec","'C233'","'Other coniferous woodland - Alpine coniferous forest'",NA
+"510","lc2_spec","'C234'","'Other coniferous woodland - Acidophilous oak and oak-birch forest'",NA
+"511","lc2_spec","'C235'","'Other coniferous woodland - Mesophytic deciduous forest'",NA
+"512","lc2_spec","'C237'","'Other coniferous woodland - Mountainous beech forest'",NA
+"513","lc2_spec","'C238'","'Other coniferous woodland - Thermophilous deciduous forest'",NA
+"514","lc2_spec","'C23A'","'Other coniferous woodland - Coniferous forest of the Mediterranean region'",NA
+"515","lc2_spec","'C23B'","'Other coniferous woodland - Mire and swamp forests'",NA
+"516","lc2_spec","'C23C'","'Other coniferous woodland - Floodplain forest'",NA
+"517","lc2_spec","'C23E'","'Other coniferous woodland - Exotic forest'",NA
+"518","lc2_spec","'C311'","'Spruce dominated mixed woodland - Boreal forest'",NA
+"519","lc2_spec","'C312'","'Spruce dominated mixed woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"520","lc2_spec","'C313'","'Spruce dominated mixed woodland - Alpine coniferous forest'",NA
+"521","lc2_spec","'C314'","'Spruce dominated mixed woodland - Acidophilous oak and oak-birch forest'",NA
+"522","lc2_spec","'C315'","'Spruce dominated mixed woodland - Mesophytic deciduous forest'",NA
+"523","lc2_spec","'C316'","'Spruce dominated mixed woodland - Beech forest'",NA
+"524","lc2_spec","'C317'","'Spruce dominated mixed woodland - Mountainous beech forest'",NA
+"525","lc2_spec","'C318'","'Spruce dominated mixed woodland - Thermophilous deciduous forest'",NA
+"526","lc2_spec","'C319'","'Spruce dominated mixed woodland - Broadleaved evergreen forest'",NA
+"527","lc2_spec","'C31A'","'Spruce dominated mixed woodland - Coniferous forest of the Mediterranean region'",NA
+"528","lc2_spec","'C31B'","'Spruce dominated mixed woodland - Mire and swamp forests'",NA
+"529","lc2_spec","'C31C'","'Spruce dominated mixed woodland - Floodplain forest'",NA
+"530","lc2_spec","'C31D'","'Spruce dominated mixed woodland - Non-riverine alder, birch or aspen forest'",NA
+"531","lc2_spec","'C31E'","'Spruce dominated mixed woodland - Exotic forest'",NA
+"532","lc2_spec","'C321'","'Pine dominated mixed woodland - Boreal forest'",NA
+"533","lc2_spec","'C322'","'Pine dominated mixed woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"534","lc2_spec","'C323'","'Pine dominated mixed woodland - Alpine coniferous forest'",NA
+"535","lc2_spec","'C324'","'Pine dominated mixed woodland - Acidophilous oak and oak-birch forest'",NA
+"536","lc2_spec","'C325'","'Pine dominated mixed woodland - Mesophytic deciduous forest'",NA
+"537","lc2_spec","'C326'","'Pine dominated mixed woodland - Beech forest'",NA
+"538","lc2_spec","'C327'","'Pine dominated mixed woodland - Mountainous beech forest'",NA
+"539","lc2_spec","'C328'","'Pine dominated mixed woodland - Thermophilous deciduous forest'",NA
+"540","lc2_spec","'C329'","'Pine dominated mixed woodland - Broadleaved evergreen forest'",NA
+"541","lc2_spec","'C32A'","'Pine dominated mixed woodland - Coniferous forest of the Mediterranean region'",NA
+"542","lc2_spec","'C32B'","'Pine dominated mixed woodland - Mire and swamp forests'",NA
+"543","lc2_spec","'C32C'","'Pine dominated mixed woodland - Floodplain forest'",NA
+"544","lc2_spec","'C32D'","'Pine dominated mixed woodland - Non-riverine alder, birch or aspen forest'",NA
+"545","lc2_spec","'C32E'","'Pine dominated mixed woodland - Exotic forest'",NA
+"546","lc2_spec","'C331'","'Other mixed woodland - Boreal forest'",NA
+"547","lc2_spec","'C332'","'Other mixed woodland - Hemiboreal forest and nemoral coniferous forest and mixed broadleaved-coniferous forest'",NA
+"548","lc2_spec","'C333'","'Other mixed woodland - Alpine coniferous forest'",NA
+"549","lc2_spec","'C334'","'Other mixed woodland - Acidophilous oak and oak-birch forest'",NA
+"550","lc2_spec","'C335'","'Other mixed woodland - Mesophytic deciduous forest'",NA
+"551","lc2_spec","'C336'","'Other mixed woodland - Beech forest'",NA
+"552","lc2_spec","'C337'","'Other mixed woodland - Mountainous beech forest'",NA
+"553","lc2_spec","'C338'","'Other mixed woodland - Thermophilous deciduous forest'",NA
+"554","lc2_spec","'C339'","'Other mixed woodland - Broadleaved evergreen forest'",NA
+"555","lc2_spec","'C33A'","'Other mixed woodland - Coniferous forest of the Mediterranean region'",NA
+"556","lc2_spec","'C33B'","'Other mixed woodland - Mire and swamp forests'",NA
+"557","lc2_spec","'C33C'","'Other mixed woodland - Floodplain forest'",NA
+"558","lc2_spec","'C33D'","'Other mixed woodland - Non-riverine alder, birch or aspen forest'",NA
+"559","lc2_spec","'C33E'","'Other mixed woodland - Exotic forest'",NA
+"560","lc2_spec","'8'","'Not relevant'",NA
+"561","lu1","'U111'","'Agriculture (excluding fallow land and kitchen gardens)'",NA
+"562","lu1","'U112'","'Fallow land'",NA
+"563","lu1","'U113'","'Kitchen garden'",NA
+"564","lu1","'U120'","'Forestry'",NA
+"565","lu1","'U130'","'Aquaculture and fishing'",NA
+"566","lu1","'U140'","'Mining and quarrying'",NA
+"567","lu1","'U150'","'Other primary production'",NA
+"568","lu1","'U210'","'Energy production'",NA
+"569","lu1","'U221'","'Manufacturing of food, beverages and tobacco products'",NA
+"570","lu1","'U222'","'Manufacturing of textile products'",NA
+"571","lu1","'U223'","'Coal, oil and metal processing'",NA
+"572","lu1","'U224'","'Production of non-metal mineral goods'",NA
+"573","lu1","'U225'","'Chemical and allied industries and manufacturing'",NA
+"574","lu1","'U226'","'Machinery and equipment'",NA
+"575","lu1","'U227'","'Wood based products'",NA
+"576","lu1","'U228'","'Printing and reproduction'",NA
+"577","lu1","'U311'","'Railway transport'",NA
+"578","lu1","'U312'","'Road transport'",NA
+"579","lu1","'U313'","'Water transport'",NA
+"580","lu1","'U314'","'Air transport'",NA
+"581","lu1","'U315'","'Transport via pipelines'",NA
+"582","lu1","'U316'","'Telecommunication'",NA
+"583","lu1","'U317'","'Logistics and storage'",NA
+"584","lu1","'U318'","'Protection infrastructures'",NA
+"585","lu1","'U319'","'Electricity, gas and thermal power distribution'",NA
+"586","lu1","'U321'","'Water supply and treatment'",NA
+"587","lu1","'U322'","'Waste treatment'",NA
+"588","lu1","'U330'","'Construction'",NA
+"589","lu1","'U340'","'Commerce, financial, professional and information services'",NA
+"590","lu1","'U341'","'Commerce'",NA
+"591","lu1","'U342'","'Financial, professional and information services'",NA
+"592","lu1","'U350'","'Community services'",NA
+"593","lu1","'U361'","'Amenities, museums, leisure'",NA
+"594","lu1","'U362'","'Sport'",NA
+"595","lu1","'U370'","'Residential'",NA
+"596","lu1","'U410'","'Abandoned areas'",NA
+"597","lu1","'U411'","'Abandoned industrial areas'",NA
+"598","lu1","'U414'","'Abandoned residential areas'",NA
+"599","lu1","'U420'","'Semi-natural and natural areas not in use'",NA
+"600","lu1","'8'","'Not relevant'",NA
+"601","lu2","'U111'","'Agriculture (excluding fallow land and kitchen gardens)'",NA
+"602","lu2","'U112'","'Fallow land'",NA
+"603","lu2","'U113'","'Kitchen garden'",NA
+"604","lu2","'U120'","'Forestry'",NA
+"605","lu2","'U130'","'Aquaculture and fishing'",NA
+"606","lu2","'U140'","'Mining and quarrying'",NA
+"607","lu2","'U150'","'Other primary production'",NA
+"608","lu2","'U210'","'Energy production'",NA
+"609","lu2","'U221'","'Manufacturing of food, beverages and tobacco products'",NA
+"610","lu2","'U222'","'Manufacturing of textile products'",NA
+"611","lu2","'U223'","'Coal, oil and metal processing'",NA
+"612","lu2","'U224'","'Production of non-metal mineral goods'",NA
+"613","lu2","'U225'","'Chemical and allied industries and manufacturing'",NA
+"614","lu2","'U226'","'Machinery and equipment'",NA
+"615","lu2","'U227'","'Wood based products'",NA
+"616","lu2","'U228'","'Printing and reproduction'",NA
+"617","lu2","'U311'","'Railway transport'",NA
+"618","lu2","'U312'","'Road transport'",NA
+"619","lu2","'U313'","'Water transport'",NA
+"620","lu2","'U314'","'Air transport'",NA
+"621","lu2","'U315'","'Transport via pipelines'",NA
+"622","lu2","'U316'","'Telecommunication'",NA
+"623","lu2","'U317'","'Logistics and storage'",NA
+"624","lu2","'U318'","'Protection infrastructures'",NA
+"625","lu2","'U319'","'Electricity, gas and thermal power distribution'",NA
+"626","lu2","'U321'","'Water supply and treatment'",NA
+"627","lu2","'U322'","'Waste treatment'",NA
+"628","lu2","'U330'","'Construction'",NA
+"629","lu2","'U340'","'Commerce, financial, professional and information services'",NA
+"630","lu2","'U341'","'Commerce'",NA
+"631","lu2","'U342'","'Financial, professional and information services'",NA
+"632","lu2","'U350'","'Community services'",NA
+"633","lu2","'U361'","'Amenities, museums, leisure'",NA
+"634","lu2","'U362'","'Sport'",NA
+"635","lu2","'U370'","'Residential'",NA
+"636","lu2","'U410'","'Abandoned areas'",NA
+"637","lu2","'U411'","'Abandoned industrial areas'",NA
+"638","lu2","'U414'","'Abandoned residential areas'",NA
+"639","lu2","'U420'","'Semi-natural and natural areas not in use'",NA
+"640","lu2","'8'","'Not relevant'",NA
+"641","lu1_type","'U221L'","'Manufacture of food beverages or tobacco products (light end)'",NA
+"642","lu1_type","'U222R'","'Manufacturing of textile products (raw)'",NA
+"643","lu1_type","'U222L'","'Manufacturing of textile products (light end)'",NA
+"644","lu1_type","'U223R'","'Coal, oil and metal processing (raw)'",NA
+"645","lu1_type","'U223H'","'Coal, oil and metal processing (heavy end)'",NA
+"646","lu1_type","'U224R'","'Production of non-metal mineral goods (raw)'",NA
+"647","lu1_type","'U225R'","'Chemical and allied industries and manufacturing (raw)'",NA
+"648","lu1_type","'U225L'","'Chemical and allied industries and manufacturing (light end)'",NA
+"649","lu1_type","'U226L'","'Machinery and equipment (light end)'",NA
+"650","lu1_type","'U226H'","'Machinery and equipment (heavy end)'",NA
+"651","lu1_type","'U227R'","'Wood based products (raw)'",NA
+"652","lu1_type","'U228L'","'Printing and reproduction (light end)'",NA
+"653","lu1_type","'U315O'","'Transport of other material via pipelines'",NA
+"654","lu1_type","'U315W'","'Transport of water via pipelines'",NA
+"655","lu1_type","'8'","'Not relevant'",NA
+"656","lu2_type","'U221L'","'Manufacture of food beverages or tobacco products (light end)'",NA
+"657","lu2_type","'U222R'","'Manufacturing of textile products (raw)'",NA
+"658","lu2_type","'U222L'","'Manufacturing of textile products (light end)'",NA
+"659","lu2_type","'U223R'","'Coal, oil and metal processing (raw)'",NA
+"660","lu2_type","'U223H'","'Coal, oil and metal processing (heavy end)'",NA
+"661","lu2_type","'U224R'","'Production of non-metal mineral goods (raw)'",NA
+"662","lu2_type","'U225R'","'Chemical and allied industries and manufacturing (raw)'",NA
+"663","lu2_type","'U225L'","'Chemical and allied industries and manufacturing (light end)'",NA
+"664","lu2_type","'U226L'","'Machinery and equipment (light end)'",NA
+"665","lu2_type","'U226H'","'Machinery and equipment (heavy end)'",NA
+"666","lu2_type","'U227R'","'Wood based products (raw)'",NA
+"667","lu2_type","'U228L'","'Printing and reproduction (light end)'",NA
+"668","lu2_type","'U315O'","'Transport of other material via pipelines'",NA
+"669","lu2_type","'U315W'","'Transport of water via pipelines'",NA
+"670","lu2_type","'8'","'Not relevant'",NA
+"671","obs_type","'1'","'In situ < 100 m'",NA
+"672","obs_type","'2'","'In situ > 100 m'",NA
+"673","obs_type","'3'","'In situ PI'",NA
+"674","obs_type","'4'","'In situ PI not possible'",NA
+"675","obs_type","'8'","'Marine sea'",NA
+"676","obs_type","'5'","'Out of national territory'",NA
+"677","obs_type","'7'","'In office PI'",NA
+"678","gps_proj","'1'","'WGS84'",NA
+"679","gps_proj","'2'","'No GPS signal'",NA
+"680","gps_proj","'8'","'Not relevant'",NA
+"681","gps_ew","'1'","'East'",NA
+"682","gps_ew","'2'","'West'",NA
+"683","gps_ew","'8'","'Not relevant'",NA
+"684","obs_direct","'8'","'Not relevant'",NA
+"685","obs_direct","'1'","'On the point'",NA
+"686","obs_direct","'2'","'Look to the North'",NA
+"687","obs_direct","'3'","'Look to the East'",NA
+"688","lc1_perc","'1'","'< 10 %'",NA
+"689","lc1_perc","'2'","'10 - 25 %'",NA
+"690","lc1_perc","'3'","'25 - 50 %'",NA
+"691","lc1_perc","'4'","'50 - 75 %'",NA
+"692","lc1_perc","'5'","'> 75 %'",NA
+"693","lc1_perc","'8'","'Not relevant'",NA
+"694","lc2_perc","'1'","'< 10 %'",NA
+"695","lc2_perc","'2'","'10 - 25 %'",NA
+"696","lc2_perc","'3'","'25 - 50 %'",NA
+"697","lc2_perc","'4'","'50 - 75 %'",NA
+"698","lc2_perc","'5'","'> 75 %'",NA
+"699","lc2_perc","'8'","'Not relevant'",NA
+"700","obs_radius","'1'","1.5",NA
+"701","obs_radius","'2'","20",NA
+"702","obs_radius","'8'","Null",NA
+"703","lu1_perc","'1'","'< 5 %'",NA
+"704","lu1_perc","'2'","'5 - 10 %'",NA
+"705","lu1_perc","'3'","'10 - 25 %'",NA
+"706","lu1_perc","'4'","'25 - 50 %'",NA
+"707","lu1_perc","'5'","'50 - 75 %'",NA
+"708","lu1_perc","'6'","'75 - 90 %'",NA
+"709","lu1_perc","'7'","'> 90 %'",NA
+"710","lu1_perc","'8'","'Not relevant'",NA
+"711","lu2_perc","'1'","'< 5 %'",NA
+"712","lu2_perc","'2'","'5 - 10 %'",NA
+"713","lu2_perc","'3'","'10 - 25 %'",NA
+"714","lu2_perc","'4'","'25 - 50 %'",NA
+"715","lu2_perc","'5'","'50 - 75 %'",NA
+"716","lu2_perc","'6'","'75 - 90 %'",NA
+"717","lu2_perc","'7'","'> 90 %'",NA
+"718","lu2_perc","'8'","'Not relevant'",NA
+"719","parcel_area_ha","'1'","'< 0.5 ha'",NA
+"720","parcel_area_ha","'2'","'0.5 - 1 ha'",NA
+"721","parcel_area_ha","'3'","'1 - 10 ha'",NA
+"722","parcel_area_ha","'4'","'> 10 ha'",NA
+"723","parcel_area_ha","'8'","'Not relevant'",NA
+"724","tree_height_survey","'1'","'< 5 m'",NA
+"725","tree_height_survey","'2'","'> 5 m'",NA
+"726","tree_height_survey","'8'","'Not relevant'",NA
+"727","tree_height_survey","'255'","'Not identifiable'",NA
+"728","tree_height_maturity","'1'","'< 5 m'",NA
+"729","tree_height_maturity","'2'","'> 5 m'",NA
+"730","tree_height_maturity","'8'","'Not relevant'",NA
+"731","tree_height_maturity","'255'","'Not identifiable'",NA
+"732","feature_width","'1'","'< 20 m'",NA
+"733","feature_width","'2'","'> 20 m'",NA
+"734","feature_width","'8'","'Not relevant'",NA
+"735","feature_width","'255'","'Not identifiable'",NA
+"736","grazing","'1'","'Signs of grazing'",NA
+"737","grazing","'2'","'No signs of grazing'",NA
+"738","grazing","'8'","'Not relevant'",NA
+"739","lc_lu_special_remark","'1'","'Harvested field'",NA
+"740","lc_lu_special_remark","'2'","'Tilled/Sowed'",NA
+"741","lc_lu_special_remark","'3'","'Clear cut'",NA
+"742","lc_lu_special_remark","'4'","'Burnt area'",NA
+"743","lc_lu_special_remark","'5'","'Fire break'",NA
+"744","lc_lu_special_remark","'6'","'Nursery'",NA
+"745","lc_lu_special_remark","'8'","'Temporary dry'",NA
+"746","lc_lu_special_remark","'9'","'Temporary flooded'",NA
+"747","lc_lu_special_remark","'10'","'No remark'",NA
+"748","lc_lu_special_remark","'88'","'Not relevant'",NA
+"749","special_status","'1'","'Protected'",NA
+"750","special_status","'2'","'Hunting'",NA
+"751","special_status","'3'","'Protected and hunting'",NA
+"752","special_status","'4'","'No special status'",NA
+"753","special_status","'8'","'Not relevant'",NA
+"754","wm","'1'","'Irrigation'",NA
+"755","wm","'2'","'Potential irrigation'",NA
+"756","wm","'3'","'Drainage'",NA
+"757","wm","'4'","'Irrigation and drainage'",NA
+"758","wm","'5'","'No visible water management'",NA
+"759","wm","'8'","'Not relevant'",NA
+"760","wm_source","'1'","'Well'",NA
+"761","wm_source","'2'","'Pond/Lake/Reservoir'",NA
+"762","wm_source","'3'","'Stream/Canal/Ditch'",NA
+"763","wm_source","'4'","'Lagoon/Wastewater'",NA
+"764","wm_source","'5'","'Other/Not Identifiable'",NA
+"765","wm_source","'8'","'Not relevant'",NA
+"766","wm_type","'1'","'Gravity'",NA
+"767","wm_type","'2'","'Pressure: Sprinkle irrigation'",NA
+"768","wm_type","'3'","'Pressure: Micro-irrigation'",NA
+"769","wm_type","'4'","'Gravity/Pressure'",NA
+"770","wm_type","'5'","'Not Identifiable'",NA
+"771","wm_type","'8'","'Not relevant'",NA
+"772","wm_delivery","'1'","'Canal'",NA
+"773","wm_delivery","'2'","'Ditch'",NA
+"774","wm_delivery","'3'","'Pipeline'",NA
+"775","wm_delivery","'4'","'Other/Non identifiable'",NA
+"776","wm_delivery","'8'","'Not relevant'",NA
+"777","soil_taken","'1'","'Yes'",NA
+"778","soil_taken","'2'","'Not possible'",NA
+"779","soil_taken","'3'","'No, already taken'",NA
+"780","soil_taken","'4'","'No sample required'",NA
+"781","soil_taken","'8'","'Not relevant'",NA
+"782","lndmng_plough","'8'","'Not relevant'",NA
+"783","lndmng_plough","'1'","'Yes'",NA
+"784","lndmng_plough","'2'","'No'",NA
+"785","soil_crop","'8'","'Not relevant'",NA
+"786","soil_crop","'1'","'< 10 %'",NA
+"787","soil_crop","'2'","'10 - 25 %'",NA
+"788","soil_crop","'3'","'25 - 50 %'",NA
+"789","soil_crop","'4'","'> 50 %'",NA
+"790","soil_stones_perc","'8'","'Not relevant'",NA
+"791","soil_stones_perc","'1'","'< 10 %'",NA
+"792","soil_stones_perc","'2'","'10 - 25 %'",NA
+"793","soil_stones_perc","'3'","'25 - 50 %'",NA
+"794","soil_stones_perc","'4'","'> 50 %'",NA
+"795","photo_point","'1'","'Photo taken'",NA
+"796","photo_point","'2'","'Photo not taken'",NA
+"797","photo_point","'8'","'Not relevant'",NA
+"798","photo_east","'1'","'Photo taken'",NA
+"799","photo_east","'2'","'Photo not taken'",NA
+"800","photo_east","'8'","'Not relevant'",NA
+"801","photo_west","'1'","'Photo taken'",NA
+"802","photo_west","'2'","'Photo not taken'",NA
+"803","photo_west","'8'","'Not relevant'",NA
+"804","photo_south","'1'","'Photo taken'",NA
+"805","photo_south","'2'","'Photo not taken'",NA
+"806","photo_south","'8'","'Not relevant'",NA
+"807","photo_north","'1'","'Photo taken'",NA
+"808","photo_north","'2'","'Photo not taken'",NA
+"809","photo_north","'8'","'Not relevant'",NA

@@ -1,0 +1,216 @@
+,var,code,label,whereClause
+1,lc1,'A11','Buildings with 1 to 3 floors',NA
+2,lc1,'A12','Buildings with more than 3 floors',NA
+3,lc1,'A13','Greenhouses',NA
+4,lc1,'A21','Non built-up area features',NA
+5,lc1,'A22','Non built-up linear features',NA
+6,lc1,'B11','Common wheat',NA
+7,lc1,'B12','Durum wheat',NA
+8,lc1,'B13','Barley',NA
+9,lc1,'B14','Rye',NA
+10,lc1,'B15','Oats',NA
+11,lc1,'B16','Maize',NA
+12,lc1,'B17','Rice',NA
+13,lc1,'B18','Triticale',NA
+14,lc1,'B19','Other cereals',NA
+15,lc1,'B21','Potatoes',NA
+16,lc1,'B22','Sugar beet',NA
+17,lc1,'B23','Other root crops',NA
+18,lc1,'B31','Sunflower',NA
+19,lc1,'B32','Rape and turnip rape',NA
+20,lc1,'B33','Soya',NA
+21,lc1,'B34','Cotton',NA
+22,lc1,'B35','Other fibre and oleaginous crops',NA
+23,lc1,'B36','Tobacco',NA
+24,lc1,'B37','Other non-permanent industrial crops',NA
+25,lc1,'B41','Dry pulses',NA
+26,lc1,'B42','Tomatoes',NA
+27,lc1,'B43','Other fresh vegetables',NA
+28,lc1,'B44','Floriculture and ornamental plants',NA
+29,lc1,'B45','Strawberries',NA
+30,lc1,'B51','Clovers',NA
+31,lc1,'B52','Lucerne',NA
+32,lc1,'B53','Other leguminous and mixtures for fodder',NA
+33,lc1,'B71','Apple fruit',NA
+34,lc1,'B72','Pear fruit',NA
+35,lc1,'B73','Cherry fruit',NA
+36,lc1,'B74','Nuts trees',NA
+37,lc1,'B75','Other fruit trees and berries',NA
+38,lc1,'B76','Oranges',NA
+39,lc1,'B77','Other citrus fruit',NA
+40,lc1,'B81','Olive groves',NA
+41,lc1,'B82','Vineyards',NA
+42,lc1,'B83','Nurseries',NA
+43,lc1,'B84','Permanent industrial crops',NA
+44,lc1,'C10','Broadleaved woodland',NA
+45,lc1,'C20','Coniferous woodland',NA
+46,lc1,'C30','Mixed woodland',NA
+47,lc1,'C21','Spruce dominated coniferous woodland',NA
+48,lc1,'C22','Pine dominated coniferous woodland',NA
+49,lc1,'C23','Other coniferous woodland',NA
+50,lc1,'D10','Shrubland with sparse tree cover',NA
+51,lc1,'D20','Shrubland without tree cover',NA
+52,lc1,'E10','Grassland with sparse tree/shrub cover',NA
+53,lc1,'E20','Grassland without tree/shrub cover',NA
+54,lc1,'F00','Bare land',NA
+55,lc1,'G10','Inland water bodies',NA
+56,lc1,'G20','Inland running water',NA
+57,lc1,'G30','Transitional water bodies',NA
+58,lc1,'G50',"'Glaciers, permanent snow'",NA
+59,lc1,'8','Not relevant',NA
+60,lc2,'A11','Buildings with 1 to 3 floors',NA
+61,lc2,'A12','Buildings with more than 3 floors',NA
+62,lc2,'A13','Greenhouses',NA
+63,lc2,'A21','Non built-up area features',NA
+64,lc2,'A22','Non built-up linear features',NA
+65,lc2,'B11','Common wheat',NA
+66,lc2,'B12','Durum wheat',NA
+67,lc2,'B13','Barley',NA
+68,lc2,'B14','Rye',NA
+69,lc2,'B15','Oats',NA
+70,lc2,'B16','Maize',NA
+71,lc2,'B17','Rice',NA
+72,lc2,'B18','Triticale',NA
+73,lc2,'B19','Other cereals',NA
+74,lc2,'B21','Potatoes',NA
+75,lc2,'B22','Sugar beet',NA
+76,lc2,'B23','Other root crops',NA
+77,lc2,'B31','Sunflower',NA
+78,lc2,'B32','Rape and turnip rape',NA
+79,lc2,'B33','Soya',NA
+80,lc2,'B34','Cotton',NA
+81,lc2,'B35','Other fibre and oleaginous crops',NA
+82,lc2,'B36','Tobacco',NA
+83,lc2,'B37','Other non-permanent industrial crops',NA
+84,lc2,'B41','Dry pulses',NA
+85,lc2,'B42','Tomatoes',NA
+86,lc2,'B43','Other fresh vegetables',NA
+87,lc2,'B44','Floriculture and ornamental plants',NA
+88,lc2,'B45','Strawberries',NA
+89,lc2,'B51','Clovers',NA
+90,lc2,'B52','Lucerne',NA
+91,lc2,'B53','Other leguminous and mixtures for fodder',NA
+92,lc2,'B71','Apple fruit',NA
+93,lc2,'B72','Pear fruit',NA
+94,lc2,'B73','Cherry fruit',NA
+95,lc2,'B74','Nuts trees',NA
+96,lc2,'B75','Other fruit trees and berries',NA
+97,lc2,'B76','Oranges',NA
+98,lc2,'B77','Other citrus fruit',NA
+99,lc2,'B81','Olive groves',NA
+100,lc2,'B82','Vineyards',NA
+101,lc2,'B83','Nurseries',NA
+102,lc2,'B84','Permanent industrial crops',NA
+103,lc2,'C10','Broadleaved woodland',NA
+104,lc2,'C20','Coniferous woodland',NA
+105,lc2,'C30','Mixed woodland',NA
+106,lc2,'C21','Spruce dominated coniferous woodland',NA
+107,lc2,'C22','Pine dominated coniferous woodland',NA
+108,lc2,'C23','Other coniferous woodland',NA
+109,lc2,'D10','Shrubland with sparse tree cover',NA
+110,lc2,'D20','Shrubland without tree cover',NA
+111,lc2,'E10','Grassland with sparse tree/shrub cover',NA
+112,lc2,'E20','Grassland without tree/shrub cover',NA
+113,lc2,'F00','Bare land',NA
+114,lc2,'G10','Inland water bodies',NA
+115,lc2,'G20','Inland running water',NA
+116,lc2,'G30','Transitional water bodies',NA
+117,lc2,'G50',"'Glaciers, permanent snow'",NA
+118,lc2,'8','Not relevant',NA
+119,lu1,'0000','No land use registered',NA
+120,lu1,'U111','Agriculture (excluding fallow land and kitchen gardens)',NA
+121,lu1,'U112','Fallow land',NA
+122,lu1,'U113','Kitchen garden',NA
+123,lu1,'U120','Forestry',NA
+124,lu1,'U130','Aquaculture and fishing',NA
+125,lu1,'U140','Mining and quarrying',NA
+126,lu1,'U210','Energy production',NA
+127,lu1,'U221',"'Manufacturing of food, beverages and tobacco products'",NA
+128,lu1,'U222','Manufacturing of textile products',NA
+129,lu1,'U223',"'Coal, oil and metal processing'",NA
+130,lu1,'U224','Production of non-metal mineral goods',NA
+131,lu1,'U225','Chemical and allied industries and manufacturing',NA
+132,lu1,'U226','Machinery and equipment',NA
+133,lu1,'U227','Wood based products',NA
+134,lu1,'U311','Railway transport',NA
+135,lu1,'U312','Road transport',NA
+136,lu1,'U313','Water transport',NA
+137,lu1,'U314','Air transport',NA
+138,lu1,'U315','Transport via pipelines',NA
+139,lu1,'U316','Telecommunication',NA
+140,lu1,'U317','Logistics and storage',NA
+141,lu1,'U318','Protection infrastructures',NA
+142,lu1,'U321','Water supply and treatment',NA
+143,lu1,'U322','Waste treatment',NA
+144,lu1,'U330','Construction',NA
+145,lu1,'U340',"'Commerce, financial, professional and information services'",NA
+146,lu1,'U350','Community services',NA
+147,lu1,'U361',"'Amenities, museums, leisure'",NA
+148,lu1,'U362','Sport',NA
+149,lu1,'U363','Holiday camps',NA
+150,lu1,'U370','Residential',NA
+151,lu1,'U410','Abandoned areas',NA
+152,lu1,'U500','WETLAND',NA
+153,lu1,'8','Not relevant',NA
+154,lu2,'0000','No land use registered',NA
+155,lu2,'U111','Agriculture (excluding fallow land and kitchen gardens)',NA
+156,lu2,'U112','Fallow land',NA
+157,lu2,'U113','Kitchen garden',NA
+158,lu2,'U120','Forestry',NA
+159,lu2,'U130','Aquaculture and fishing',NA
+160,lu2,'U140','Mining and quarrying',NA
+161,lu2,'U210','Energy production',NA
+162,lu2,'U221',"'Manufacturing of food, beverages and tobacco products'",NA
+163,lu2,'U222','Manufacturing of textile products',NA
+164,lu2,'U223',"'Coal, oil and metal processing'",NA
+165,lu2,'U224','Production of non-metal mineral goods',NA
+166,lu2,'U225','Chemical and allied industries and manufacturing',NA
+167,lu2,'U226','Machinery and equipment',NA
+168,lu2,'U227','Wood based products',NA
+169,lu2,'U311','Railway transport',NA
+170,lu2,'U312','Road transport',NA
+171,lu2,'U313','Water transport',NA
+172,lu2,'U314','Air transport',NA
+173,lu2,'U315','Transport via pipelines',NA
+174,lu2,'U316','Telecommunication',NA
+175,lu2,'U317','Logistics and storage',NA
+176,lu2,'U318','Protection infrastructures',NA
+177,lu2,'U321','Water supply and treatment',NA
+178,lu2,'U322','Waste treatment',NA
+179,lu2,'U330','Construction',NA
+180,lu2,'U340',"'Commerce, financial, professional and information services'",NA
+181,lu2,'U350','Community services',NA
+182,lu2,'U361',"'Amenities, museums, leisure'",NA
+183,lu2,'U362','Sport',NA
+184,lu2,'U363','Holiday camps',NA
+185,lu2,'U370','Residential',NA
+186,lu2,'U410','Abandoned areas',NA
+187,lu2,'U500','WETLAND',NA
+188,lu2,'8','Not relevant',NA
+189,obs_type,'1','In situ < 100 m',AND obs_dist::numeric < 100
+190,obs_type,'1','In situ > 100 m',AND obs_dist::numeric > 100
+191,obs_type,'2','In office PI',NA
+192,obs_type,'3','In situ PI',NA
+193,gps_proj,'0','Not relevant',NA
+194,gps_proj,'1','WGS84',NA
+195,gps_proj,'2','No GPS signal',NA
+196,obs_direct,'8','Not relevant',NA
+197,obs_direct,'1','On the point',NA
+198,obs_direct,'2','Look to the North',NA
+199,obs_direct,'3','Look to the East',NA
+200,obs_radius,'1',1.5,NA
+201,obs_radius,'2',20,NA
+202,obs_radius,'0',Null,NA
+203,gps_ew,'1','East',NA
+204,gps_ew,'2','West',NA
+205,gps_ew,'8','Not relevant',NA
+206,photo_point,'1','Photo taken',NA
+207,photo_point,'2','Photo not taken',NA
+208,photo_east,'1','Photo taken',NA
+209,photo_east,'2','Photo not taken',NA
+210,photo_west,'1','Photo taken',NA
+211,photo_west,'2','Photo not taken',NA
+212,photo_north,'1','Photo taken',NA
+213,photo_north,'2','Photo not taken',NA
+214,photo_south,'1','Photo taken',NA
+215,photo_south,'2','Photo not taken',NA

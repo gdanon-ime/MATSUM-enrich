@@ -1,0 +1,150 @@
+year,var,oldVal,newVal,whereClause
+2006,gps_ew,'X','8',NA
+2006,gps_ew,'E','1',NA
+2006,gps_ew,'W','2',NA
+2006,obs_direct,'0','8',NA
+2006,obs_radius,'0',Null,NA
+2006,lc1,'C11','C10',NA
+2006,lc1,'C12','C20',NA
+2006,lc1,'C13','C30',NA
+2006,lc1,'D01','D10',NA
+2006,lc1,'D02','D20',NA
+2006,lc1,'E01','E10',NA
+2006,lc1,'E02','E20',NA
+2006,lc1,'G01','G10',NA
+2006,lc1,'G02','G20',NA
+2006,lc1,'G03','G30',NA
+2006,lc1,'G05','G50',NA
+2006,lc2,'C11','C10',NA
+2006,lc2,'C12','C20',NA
+2006,lc2,'C13','C30',NA
+2006,lc2,'D01','D10',NA
+2006,lc2,'D02','D20',NA
+2006,lc2,'E01','E10',NA
+2006,lc2,'E02','E20',NA
+2006,lc2,'G01','G10',NA
+2006,lc2,'G02','G20',NA
+2006,lc2,'G03','G30',NA
+2006,lc2,'G05','G50',NA
+2006,lu1,'U400','U410',NA
+2006,lu2,'U400','U410',NA
+2009,gps_proj,'X','2',NA
+2009,gps_proj,'WGS84','1',NA
+2009,gps_proj,'WG','1',NA
+2009,gps_ew,'W','2',NA
+2009,gps_ew,'E','1',NA
+2009,lc1_perc,'0','8',NA
+2009,lc2_perc,'0','8',NA
+2009,tree_height_survey,'0','8',NA
+2009,feature_width,'0','8',NA
+2009,lndmng_plough,'0','8',NA
+2009,wm_source,'0','8',NA
+2009,wm_type,'0','8',NA
+2009,wm_delivery,'0','8',NA
+2009,soil_crop,'0','8',NA
+2009,soil_stones_perc,'0','8',NA
+2009,soil_taken,'0','8',NA
+2009,soil_taken,'3','4',NA
+2009,grazing,'3','8',NA
+2009,lc1_spec,'','8',NA
+2009,lu1,'U400','U410',NA
+2009,lu2,'U400','U410',NA
+2012,gps_ew,'E','1',NA
+2012,gps_ew,'W','2',NA
+2012,lc1_spec,'6','8',NA
+2012,lc1_perc,'2','1',NA
+2012,lc1_perc,'3','2',NA
+2012,lc1_perc,'4','3',NA
+2012,lc1_perc,'5','4',NA
+2012,lc1_perc,'6','5',NA
+2012,lc2_perc,'2','1',NA
+2012,lc2_perc,'3','2',NA
+2012,lc2_perc,'4','3',NA
+2012,lc2_perc,'5','4',NA
+2012,lc2_perc,'6','5',NA
+2012,lc_lu_special_remark,'1','100',NA
+2012,lc_lu_special_remark,'2','200',NA
+2012,lc_lu_special_remark,'7','700',NA
+2012,lc_lu_special_remark,'8','800',NA
+2012,lc_lu_special_remark,'100','2',NA
+2012,lc_lu_special_remark,'200','1',NA
+2012,lc_lu_special_remark,'700','10',NA
+2012,lc_lu_special_remark,'800','88',NA
+2012,photo_north,'0','8',NA
+2012,photo_east,'0','8',NA
+2012,photo_south,'0','8',NA
+2012,photo_west,'0','8',NA
+2012,photo_point,'0','8',NA
+2012,gps_proj,'3','8',NA
+2012,gps_proj,'4',Null,NA
+2012,gps_proj,'14',Null,NA
+2012,gps_proj,'19',Null,NA
+2015,obs_type,'5','8',NA
+2015,obs_type,'6','5',NA
+2015,lc_lu_special_remark,'1','100',NA
+2015,lc_lu_special_remark,'2','200',NA
+2015,lc_lu_special_remark,'7','700',NA
+2015,lc_lu_special_remark,'8','800',NA
+2015,lc_lu_special_remark,'9','900',NA
+2015,lc_lu_special_remark,'10','1000',NA
+2015,lc_lu_special_remark,'100','2',NA
+2015,lc_lu_special_remark,'200','1',NA
+2015,lc_lu_special_remark,'700','10',NA
+2015,lc_lu_special_remark,'800','88',NA
+2015,lc_lu_special_remark,'900','8',NA
+2015,lc_lu_special_remark,'1000','9',NA
+2015,parcel_area_ha,'5','8',NA
+2015,gps_ew,'W','2',NA
+2015,gps_ew,'E','1',NA
+2015,lc1_perc,'2','1',NA
+2015,lc1_perc,'3','2',NA
+2015,lc1_perc,'4','3',NA
+2015,lc1_perc,'5','4',NA
+2015,lc1_perc,'6','5',NA
+2015,lc1_perc,'7','5',NA
+2015,lc2_perc,'2','1',NA
+2015,lc2_perc,'3','2',NA
+2015,lc2_perc,'4','3',NA
+2015,lc2_perc,'5','4',NA
+2015,lc2_perc,'6','5',NA
+2015,lc2_perc,'7','5',NA
+2006,obs_type,'6','5',NA
+2012,obs_type,'6','5',NA
+2009,obs_type,'6','5',NA
+2018,obs_type,'6','5',NA
+2018,parcel_area_ha,'2','1',NA
+2018,parcel_area_ha,'3','2',NA
+2018,parcel_area_ha,'4','3',NA
+2018,parcel_area_ha,'5','4',NA
+2018,lc1_perc,< 10,'1',> 0
+2018,lc1_perc,>= 10,'2',< 25
+2018,lc1_perc,>= 25,'3',< 50
+2018,lc1_perc,>= 50,'4',< 75
+2018,lc1_perc,>= 75,'5',NA
+2018,lc2_perc,< 10,'1',> 0
+2018,lc2_perc,>= 10,'2',< 25
+2018,lc2_perc,>= 25,'3',< 50
+2018,lc2_perc,>= 50,'4',< 75
+2018,lc2_perc,>= 75,'5',<= 100
+2018,lc2_perc,88888,'8',NA
+2018,lu1_perc,< 5,'1',> 0
+2018,lu1_perc,>= 5,'2',< 10
+2018,lu1_perc,>= 10,'3',< 25
+2018,lu1_perc,>= 25,'4',< 50
+2018,lu1_perc,>= 50,'5',< 75
+2018,lu1_perc,>= 75,'6',< 90
+2018,lu1_perc,>= 90,'7',<= 100
+2018,lu1_perc,88888,'8',NA
+2018,lu2_perc,< 5,'1',> 0
+2018,lu2_perc,>= 5,'2',< 10
+2018,lu2_perc,>= 10,'3',< 25
+2018,lu2_perc,>= 25,'4',< 50
+2018,lu2_perc,>= 50,'5',< 75
+2018,lu2_perc,>= 75,'6',< 90
+2018,lu2_perc,>= 90,'7',<= 100
+2018,lu2_perc,88888,'8',NA
+2018,soil_stones_perc,< 10,'1',> 0
+2018,soil_stones_perc,>= 10,'2',< 25
+2018,soil_stones_perc,>= 25,'3',< 50
+2018,soil_stones_perc,>= 50,'4',<= 100
+2018,soil_stones_perc,888,'8',NA
